@@ -136,7 +136,7 @@ export default function ContactPage() {
             </header>
             
  
- <main role="main" aria-labelledby="contact-heading" className="relative isolate min-h-screen bg-gradient-to-b from-[#03020a] via-[#070512] to-[#070014] text-white overflow-hidden flex items-center justify-center px-4 py-20">
+         <main role="main" aria-labelledby="contact-heading" className="relative isolate min-h-screen bg-gradient-to-b from-[#03020a] via-[#070512] to-[#070014] text-white overflow-hidden flex items-center justify-center px-4 py-20">
             {/* subtle background textures */}
 
             
