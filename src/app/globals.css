@@ -1,124 +1,81 @@
-/* --- globals.css --- */
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
-/* 1. Importar una fuente moderna (opcional, pero recomendado) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');*/
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
 
-/* 2. Variables de Color (El Corazón del Tema) */
+/* Fuente moderna */
+
+/* RESET SUAVE */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
 :root {
-  /* Paleta de Oscuros */
-  --bg-primary: #000000;
-  /* Un negro casi puro para el fondo */
-  --bg-secondary: #1A1A1A;
-  /* Un gris oscuro para tarjetas o secciones */
-  --border-color: #2a2a2a;
-  /* Bordes sutiles */
+  --background: #030000;
+  --foreground: #e6e6f8;
 
-  /* Paleta de Texto */
-  --text-primary: #FAFAFA;
-  /* Blanco principal (ligeramente apagado) */
-  --text-secondary: #A0A0A0;
-  /* Gris para subtexto o párrafos */
+  --accent-primary: #8b5cf6;  /* purple */
+  --accent-secondary: #00e5ff; /* cyan */
+  --accent-glow: rgba(0, 229, 255, 0.35);
 
-  /* Acentos Neón (basado en tu imagen) */
-  --accent-green: #00ff00;
-  --accent-purple: #9f00ff;
-  --accent-pink: #ff007f;
-  --accent-red: #ff0000;
-}
+  --surface-dark: #0b0b12;
+  --surface-light: #151521;
 
-/* 3. Reseteo Básico y Estilos Globales */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  background-color: #050507;
-  color: #e0e0e0;
-  line-height: 1.6;
+  --text-primary: #f2f2ff;
+  --text-secondary: #b8b8d4;
+  --text-muted: #6d6d87;
 }
 
 body {
-  background-color: var(--bg-primary);
+  
+  
+  background: red !important;
+
   color: var(--text-primary);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-
-  /* Mejoras de renderizado de texto */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  font-family: var(--font-geist-sans, 'Inter', sans-serif);
+  overflow-x: hidden;
 }
 
-/* 4. Estilos de Tipografía Base */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.75rem;
-  /* Un sutil brillo para los encabezados */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-}
-
-p {
-  margin-bottom: 1rem;
-  color: var(--text-secondary);
-  /* Párrafos con color secundario */
-}
-
-/* Links inherit their parent color by default - components can override */
 a {
+  color: var(--text-primary);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: 0.25s ease;
 }
 
-
-/* 5. Clases Utilitarias (Para los efectos Neón) */
-
-/* Efecto de texto brillante */
-.text-glow-green {
-  color: var(--accent-green);
-  text-shadow: 0 0 5px var(--accent-green), 0 0 10px var(--accent-green);
+a:hover {
+  color: var(--accent-primary);
 }
 
-.text-glow-purple {
-  color: var(--accent-purple);
-  text-shadow: 0 0 5px var(--accent-purple), 0 0 10px var(--accent-purple);
+.text-gradient {
+  background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.text-glow-pink {
-  color: var(--accent-pink);
-  text-shadow: 0 0 5px var(--accent-pink), 0 0 10px var(--accent-pink);
+.card {
+  background: var(--surface-light);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 1.2rem;
 }
 
-/* Efecto de borde neón (como en las tarjetas de Valorant) */
-.neon-border-card {
-  border: 1px solid var(--accent-pink);
-  background-color: var(--bg-secondary);
-  border-radius: 8px;
-  /* El box-shadow crea el brillo exterior e interior */
-  box-shadow: 0 0 10px var(--accent-pink),
-    inset 0 0 5px rgba(255, 0, 127, 0.5);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.neon-border-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--accent-pink),
-    inset 0 0 10px rgba(255, 0, 127, 0.5);
+.animate-fadeUp {
+  animation: fadeInUp 0.6s ease-out;
 }
 
-
-/* 6. Scrollbar personalizado (opcional) */
+/* Fin globals.css */
