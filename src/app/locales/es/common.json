@@ -1,0 +1,591 @@
+{
+    "header": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "projects": "Proyectos",
+        "certificates": "Certificados",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "aboutSection": {
+        "title": "Sobre mi",
+        "greeting": "Hola! I am Carolina Celeste Navarro Aldoradin",
+        "description": "Technician/future engineer from Peru, passionate about creating innovative solutions through technology. I enjoy exploring new technologies and improving my skills through continuous learning.",
+        "avatarAlt": "Avatar Image",
+        "availability_title": "Availability",
+        "availability": "Currently available for freelance and full-time hybrid and remote roles globally or on-site roles in Peru.",
+        "key_skills_title": "Key Skills",
+        "key_skills": [
+            "Diseño CAD",   
+            "Programación (Python, C++, JavaScript, etc)",
+            "Ingeniería inversa de protocolos",
+            "IoT",
+            "Gestión de proyectos"
+        ],
+        "contactTitle": "Contáctame",
+        "stats": {
+            "yearsExperience": "Años de experiencia",
+            "projects": "Proyectos completados",
+            "certificates": "Certificados obtenidos"
+        },
+        "downloadButton": "Descargar Curriculum",
+        "stories":{
+            "mentality": {
+                "title": "My Mentality",
+                "description": "My professional growth has been guided by the idea that there is always a solution, even when it's not obvious. I come from a background where opportunities are not guaranteed, so I turned every challenge into a driving force. This mentality allowed me to pave my way through two careers, earn competitive scholarships, and advance in technical areas with steep learning curves. This same attitude is what I bring to every project: researching, testing, iterating, and not letting go of the problem until I find the answer.",
+                "quote": "Aut viam inveniam aut faciam. - Hannibal Barca",
+                "translation": "I will find a way or make one. - Hannibal Barca"
+                
+            },
+            "discipline": {
+                    "title": "Discipline",
+                    "description": "Discipline has been a cornerstone of my journey. Balancing rigorous academic pursuits with personal growth required unwavering commitment and time management. This discipline has empowered me to consistently meet deadlines, achieve goals, and maintain a high standard of work in all my endeavors."}
+        },
+        "roles":{
+            "title": "Preferred Roles",
+            "current": {
+                "backendDev":{
+                    "name": "Backend Developer Jr (Node.js / Supabase)",
+                    "categories":[
+                    "Software", "All", "Cloud"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "fullStackDev":{
+                    "name": "Full-Stack Developer Jr (React + Node)",
+                    "categories":[
+                    "Software", "All", "Cloud", "UI/UX"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+
+                },
+                "frontendDev":{
+                    "name": "Frontend Developer (React / Next.js)",
+                    "categories":[
+                        "Software", "UI/UX", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "webDeveloper":{
+                    "name": "Web Developer",
+                    "categories":[
+                        "Software", "All" ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "iotDev":{
+                    "name": "IoT Developer",
+                    "categories":[
+                        "IoT", "Hardware", "Industrial", "Data", "Software", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "cadDesigner":{
+                    "name": "CAD Designer",
+                    "categories":[
+                        "CAD", "Industrial", "Hardware", "R&D", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "softwareEngineer":{
+                    "name": "Software Engineer",
+                    "categories":[
+                        "Software", "Cloud", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "apiDeveloper":{
+                    "name": "API Developer (REST)",
+                    "categories":[
+                        "Software", "Cloud", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "automationDev":{
+                    "name": "Automation Software Developer (scripts + pipelines)",
+                    "categories":[
+                        "Industrial", "Software", "RPA","All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "iotSoftwareDev":{
+                    "name": "IoT Software Developer",
+                    "categories":[
+                        "IoT", "Software", "Industrial", "Hardware", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "telemetryEngineer":{
+                    "name": "Telemetry Engineer",
+                    "categories":[
+                        "IoT", "Industrial", "Data", "Hardware", "Telemetry", "Wireless", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "networkTelemetryTechnician":{
+                    "name": "Junior Network & Telemetry Technician",
+                    "categories":[
+                        "Iot", "Industrial", "Hardware", "Networking", "Wireless",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "dataAcquisitionEngineer":{
+                    "name": "Data Acquisition Engineer",
+                    "categories":[
+                        "IoT", "Industrial", "Data", "Hardware",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"   
+                },
+                "iotEngineer":{
+                    "name": "IoT Engineer",
+                    "categories":[
+                        "IoT", "Industrial", "Hardware", "Software", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "lowCodeDeveloper":{
+                    "name": "Low-Code / No-Code Developer",
+                    "categories":[
+                        "Software", "Automation", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "systemsIntegrator":{
+                    "name": "Systems Integrator",
+                    "categories":[
+                        "Industrial", "IoT", "Hardware", "Software", "Networking",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "PLCDeveloper":{
+                    "name": "PLC/SCADA Support Engineer",
+                    "categories":[
+                        "Industrial", "IoT", "Field Services", "Hardware", "Software", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "R&DEngineer":{
+                    "name": "R&D Engineer",
+                    "categories":[
+                        "R&D", "Industrial", "IoT", "Hardware", "Software",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "embeddedSystemsDev":{
+                    "name": "Embedded Systems Developer",
+                    "categories":[
+                        "IoT", "Hardware", "Industrial", "Software",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "firmwareDev":{
+                    "name": "Firmware Developer",
+                    "categories":[
+                        "Software", "Hardware", "IoT", "Industrial",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "iotSolutionsEngineer":{
+                    "name": "IoT Solutions Engineer",
+                    "categories":[
+                        "IoT", "Industrial", "Hardware", "Software",
+                    "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "wirelessSystemsEngineer":{
+                    "name": "Wireless Systems Engineer",
+                    "categories":[
+                    "IoT", "Industrial", "Hardware", "Networking", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "iotPrototypingEngineer":{
+                    "name": "IoT Prototyping Engineer",
+                    "categories":[
+                    "IoT", "Industrial", "R&D", "Hardware", "Software", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "dataAnalyst":{
+                    "name": "Data Analyst (industrial or general)",
+                    "categories":[
+                        "Data", "Industrial","All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "biAnalyst":{
+                    "name": "BI Analyst",
+                    "categories":[
+                        "Data", "Industrial", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "innovationAnalyst":{
+                    "name": "Innovation Analyst",
+                    "categories":[
+                        "Industrial", "Automation","Data","R&D", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "digitalTransformationAnalyst":{
+                    "name": "Digital Transformation Analyst",
+                    "categories":[ "Industrial","R&D", "Automation", "Cloud", "Data", "All"
+                    ],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "iotTelematicsTechnician":{
+                    "name": "IoT & Telematics Technician",
+                    "categories":[
+                        "Hardware", "IoT", "Industrial", "Telemetry", "Networking", "Field Services", "All"],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "industrialSupportEngineer":{
+                    "name": "Industrial Support Engineer",
+                    "categories":[ "Industrial", "Hardware", "IoT", "All", "Field Services", "Electronics", "All"],
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "electronicEngineeringAssistant":{
+                    "name": "Electronics Engineering Assistant",
+                    "categories":["Industrial","Hardware", "R&D", "Mining", "Electronics", "All"
+                    ],                    
+                    "modality": ["On-site", "Remote", "Hybrid"],
+                    "level": "Junior"
+                },
+                "embeddedElectronicsTechnician":{
+                    "name": "Embedded Electronics Technician",
+                    "categories":[ "Industrial", "Hardware", "IoT", "Electronics", "All"
+                    ],
+                    "modality": ["On-site", "Hybrid"],
+                    "level": "Junior"
+                },
+                "labTechnician":{
+                    "name": "Lab Technician",
+                    "categories":["Electronics", "Industrial", "Hardware", "All"
+                    ],
+                    "modality": ["On-site", "Hybrid"],
+                    "level": "Junior"
+                },
+                "miningTechnologyTechnician":{
+                    "name": "Mining Technology Technician",
+                    "categories":[ "Automation", "Industrial", "Hardware", "Mining", "Electronics", "Field Services", "All"],
+                    "modality": ["On-site", "Hybrid"],
+                    "level": "Junior"
+                },
+                "telematicsInstallationTechnician":{
+                    "name": "Telematics Installation Technician",
+                    "categories":[ "Networking", "Industrial", "Hardware", "IoT", "Field Services",  "All"],
+                    "modality": ["On-site", "Hybrid"],
+                    "level": "Junior"
+                },
+                "electricElectronicsTechnician":{
+                    "name": "Electrical/Electronic Maintenance technician",
+                    "categories":[ "Electronics", "Industrial", "Hardware", "All", "Field Services"],
+                    "modality": ["On-site", "Hybrid"],
+                    "level": "Junior"
+                },
+                "technicalServiceEngineer":{
+                    "name": "Technical Service Engineer",
+                    "categories":[ "Electronics", "Industrial", "Hardware","Field Services","Mining","All"
+                    ],
+                    "modality": ["On-site", "Hybrid"],
+                    "level": "Junior"
+                }
+            }
+    },
+    "projectsSection": {
+        "title": "My Projects",
+        "description": "A tactical gallery of past work — click a card to inspect the full dossier",
+        "Portfolio": {
+            "name": "Portfolio Website",
+            "description": "A personal portfolio website to showcase my projects and skills.",
+            "problem": "I need to get hired but people don't know my work",
+            "challenge": "Create a responsive and visually appealing portfolio website that highlights my work and expertise.",
+            "achievements": [
+                "Successfully designed and developed a fully responsive portfolio website.",
+                "Implemented internationalization (i18n) to support multiple languages.",
+                "Deployed the website on Vercel for optimal performance and accessibility."
+            ],
+            "skills": ["React", "Next.js", "CSS", "TypeScript", "Vercel", "Github", "i18n"],
+            "steps": [
+                "Design the layout and structure of the portfolio website.",
+                "Develop the frontend using React and Next.js.",
+                "Implement internationalization (i18n) for multiple languages.",
+                "Deploy the website on Vercel for easy access."
+            ],
+            "status": "In Progress",
+            "startDate": "1 Dec 2025",
+            "endDate": "2 Dec 2025"
+        },
+        "senatiInnova":
+        {
+            "name": "Acquisition and Visualization of Data from Mechatronic Module 4.0 with Augmented Reality",
+            "description": "",
+            "problem": "",
+            "challenge": "",
+            "achievements":[
+                "11th place at National Level and 1st place at departmental level"
+            ],
+            "skills": ["Unity","Node-RED", "MQTT", "ThingsBoard", "Google Sheets", "HiveMQ","Autodesk Inventor"],
+            "steps":[],
+            "status": "Completed",
+            "startDate": "",
+            "endDate": "",
+            "collaborators": {
+                "name": "Josue Silva",
+                "phone": "+51 978 451 812"
+        }
+        },
+        "RTLS": {
+            "name": "Real Time Localization System (RTLS)",
+            "description": "A RTLS system for tracking assets in real-time using BLE technology.",
+            "problem": "Tools get lost",
+            "challenge": "Develop a reliable RTLS system that can accurately track the location of assets within a defined area.",
+            "achievements": [
+                "Successfully implemented a BLE-based RTLS system.",
+                "Developed firmware for ESP32 devices to communicate with BLE beacons.",
+                "Created a Node-RED flow to process and visualize location data."
+            ],
+            "skills": ["BLE", "Wi-Fi","Node-RED", "C++", "VSCode", "ESP32", "Networking", "Prototyping", "CAD Design"],
+            "steps": [
+                "Set up BLE beacons and receivers for asset tracking.",
+                "Develop firmware for ESP32 devices using C++ in VSCode.",
+                "Create a Node-RED flow to process and visualize location data.",
+                "Test and optimize the RTLS system for accuracy and reliability."
+            ],
+            "status": "Completed",
+            "startDate": "",
+            "endDate": ""
+        },
+        "ReverseEngineering": {
+            "name": "Hydraulic Bench Reverse Engineering Process",
+            "description": "Project aimed to use telemetry and supervision to keep a history of the Hydraulic bench.",
+            "problem": "We have two hydraulic benches and both use legacy protocols and there is barely no documentation",
+            "challenge": "Reverse engineer the communication protocols used by the hydraulic bench to extract telemetry data.",
+            "achievements":[],
+            "skills": ["Python", "Wireshark", "Networking", "Serial Protocols Analysis", "VSCode", "Putty", "Logic Analyzer", "Realterm"],
+            "steps": [
+                "Capture communication data using Wireshark.",
+                "Analyze the captured data to identify protocols and data structures.",
+                "Develop Python scripts to extract and process telemetry data.",
+                "Implement a supervision system to monitor and log hydraulic bench performance."
+            ],
+            "status": "Completed",
+            "startDate": "",
+            "endDate": ""
+        },
+        "LinealTransformers": {
+            "name": "Lineal Transformers",
+            "description": "Web platform created to ease the learning of lineal transformers for engineering students in Math asignatures. Developed as Final project for the Discrete Mathematics Course.",
+            "problem":" insert problem",
+            "challenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students.",
+            "achievements": [
+                "Developed an interactive web platform with visualizations and examples.",
+                "Implemented user-friendly features to enhance the learning experience.",
+                "Received positive feedback from students and educators."
+            ],
+            "skills": ["JavaScript", "Wireshark", "Networking", "Serial Protocols Analysis"],
+            "steps": [
+                "Design the web platform layout and user interface.",
+                "Develop interactive features and visualizations using JavaScript.",
+                "Test the platform with engineering students and gather feedback.",
+                "Refine the platform based on user feedback to improve usability."
+            ],
+            "status": "In Progress",
+            "startDate": "",
+            "endDate": "",
+            "link": ""
+        },
+        "TinkuyhubJuntta": {
+            "name": "Tinkuyhub & Juntta Platforms Integration",
+            "description": "HTTPS integration of Tinkuyhub & Juntta platforms to create an account for both Tinkuyhub and Juntta in Tinkuyhub website.",
+            "problem":" insert problem",
+            "challenge": "Reduce the friction in the signup process by integrating both platforms for a seamless user experience.",
+            "achievements": [
+                "Successfully designed and developed an e-commerce platform.",
+                "Implemented secure payment processing and order management features.",
+                "Optimized the platform for performance and user experience."
+            ],
+            "skills": ["Moddle", "HTTP", "PHP"],
+            "steps": [
+                "Design the e-commerce platform layout and user interface.",
+                "Develop frontend features using React.",
+                "Implement backend functionalities with Node.js, Express, and MongoDB.",
+                "Integrate secure payment processing and order management systems."
+            ],
+            "status": "Completed",
+            "startDate": "",
+            "endDate": ""
+        },
+        "AIAvatar": {
+            "name": "AI Avatar Development",
+            "description": "Development of AI-driven avatars for interactive applications.",
+            "problem":" insert problem",
+            "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+            "achievements": [
+                "Successfully developed AI avatars with natural language processing capabilities.",
+                "Implemented real-time interaction features for enhanced user engagement.",
+                "Deployed AI avatars in various interactive applications."
+            ],
+            "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
+            "steps": [
+                "Design the AI avatar models and interaction scenarios.",
+                "Develop natural language processing algorithms using Python and TensorFlow.",
+                "Implement real-time interaction features for user engagement.",
+                "Deploy AI avatars in interactive applications and gather user feedback."
+            ],
+            "status": "In Progress",
+            "startDate": "",
+            "endDate": ""
+        },
+        "youngaCommunique":{
+            "name": "YOUNGA Communique 2023-2024",
+            "description": "Communique description here.",
+            "problem":" insert problem",
+            "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+            "achievements": [
+                "Successfully developed AI avatars with natural language processing capabilities.",
+                "Implemented real-time interaction features for enhanced user engagement.",
+                "Deployed AI avatars in various interactive applications."
+            ],
+            "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
+            "steps": [
+                "Design the AI avatar models and interaction scenarios.",
+                "Develop natural language processing algorithms using Python and TensorFlow.",
+                "Implement real-time interaction features for user engagement.",
+                "Deploy AI avatars in interactive applications and gather user feedback."
+            ],
+            "status": "In Progress",
+            "startDate": "",
+            "endDate": "",
+            "link": ""
+
+        },
+        "academiaLideres":{
+            "name": "proposals for sustainable development",
+            "description": "description gaaaa",
+            "problem":" insert problem",
+            "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+            "achievements": [
+                "Successfully developed AI avatars with natural language processing capabilities.",
+                "Implemented real-time interaction features for enhanced user engagement.",
+                "Deployed AI avatars in various interactive applications."
+            ],
+            "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
+            "steps": [
+                "Design the AI avatar models and interaction scenarios.",
+                "Develop natural language processing algorithms using Python and TensorFlow.",
+                "Implement real-time interaction features for user engagement.",
+                "Deploy AI avatars in interactive applications and gather user feedback."
+            ],
+            "status": "Completed",
+            "startDate": "",
+            "endDate": "",
+            "link": ""
+            
+        }
+        
+    },
+    "certificatesSection": {
+        "title": "Certificates",
+        "description": 
+            "This section includes various certificates I have earned since 11 y/o. Feel free to filter what you are most interested on"
+    },
+    "servicesSection": {
+        "title": "Services",
+        "tagline":" Offering a range of services to help you achieve your goals.",
+        "filter_all": "All",
+        "popular": "Popular",
+        "sideTitle": "Lo que puedo hacer por ti",
+        "sideText": "Brindo una variedad de servicios para satisfacer tus necesidades. Ya sea que busques consultoría experta, desarrollo web personalizado, diseño CAD detallado o soluciones innovadoras de avatares AI, tengo las habilidades y la experiencia para ofrecer resultados de alta calidad.",
+        "sideItem1": "Consultoría experta en desarrollo de software y arquitectura de sistemas.",
+        "sideItem2": "Desarrollo de aplicaciones web personalizadas adaptadas a las necesidades de tu negocio.",
+        "sideItem3": "Creación y modificación de modelos CAD detallados para ingeniería y fabricación.",
+        "consulting": {
+            "name": "Consulting",
+            "description": "Providing expert advice on software development and system architecture.",
+            "prices": {
+                "basic": "$10/hour",
+                "premium": "$30/hour"
+            },
+            "modality": ["On-site", "Hybrid", "Remote"]
+        },
+        "webdevelopment": {
+            "name": "Web Development",
+            "description": "Building custom web applications tailored to your business needs.",
+            "prices": {
+                "basic": "$300/project",
+                "premium": "$800/project"
+            },
+            "modality": ["On-site", "Hybrid", "Remote"]
+        },
+        "caddesign": {
+            "name": "CAD Design",
+            "description": "Creating and modifying detailed CAD models for engineering and manufacturing purposes.",
+            "prices": {
+                "basic": "$200/model",
+                "premium": "$600/model"
+            },
+            "modality": ["On-site", "Hybrid", "Remote"]
+        },
+        "aiavatars": {
+            "name": "AI Avatars",
+            "description": "Designing and implementing AI-driven avatars for interactive applications.",
+            "prices": {
+                "basic": "$500/avatar",
+                "premium": "$700/avatar"
+            },
+            "modality": ["On-site", "Hybrid", "Remote"]
+        }
+
+    },
+    "contactSection": {
+        "title": "Contácteme",
+        "description": "Feel free to reach out for collaborations or inquiries.",
+        "form": {
+            "name": "Carolina Celeste Navarro Aldoradin",
+            "email1": "cnava.aldoradin@gmail.com",
+            "email2": "genix.mvp@gmail.com",
+            "Instagram": "@ccelestenava",
+            "linkedIn": "www.linkedin.com/in/carolina-celeste-navarro-aldoradin",
+            "gitHub": "github.com/genixmvp",
+            "message": "Message",
+            "submit": "Send"
+        }
+    }
+}
+}
