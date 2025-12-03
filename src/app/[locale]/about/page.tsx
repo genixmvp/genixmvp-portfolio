@@ -256,7 +256,10 @@ export default function AboutPage(): React.ReactElement {
                         
                     </div>
                     <div>
+                        <div>
                         
+
+                    </div>
 
                     </div>
                    
