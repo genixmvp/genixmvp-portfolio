@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden>
-  <rect width="100%" height="100%" fill="#0e0a1a" />
-  <g fill="#fff0b0" opacity="0.9">
-    <rect x="140" y="120" width="920" height="560" rx="12" fill="#0b0714" stroke="#3a2f00" stroke-width="6"/>
-  </g>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial" font-size="64" fill="#ffefc2">Project Image 4 — Match Visualizer</text>
-</svg>

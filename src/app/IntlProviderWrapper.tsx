@@ -17,7 +17,7 @@ export default function IntlProviderWrapper({
     // When the provider mounts we log the locale and a small sample of messages
     const count = messages ? Object.keys(messages).length : 0;
     // show a few keys (up to 5) so it's useful in the console without being noisy
-    const sample = messages ? Object.keys(messages).slice(0, 5) : [];
+    const sample = messages ? Object.keys(messages).slice(200, 205) : [];
     // eslint-disable-next-line no-console
     console.log("[IntlProviderWrapper] mounted — locale:", locale, "messagesCount:", count, "sampleKeys:", sample);
   }, [locale, messages]);

@@ -109,4 +109,12 @@ a:hover {
 .animate-pulse-slow { animation: pulse-slow 8s ease-in-out infinite; }
 .animate-pulse-slower { animation: pulse-slower 12s ease-in-out infinite; }
 
+::-webkit-scrollbar {
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 4px;
+}
+
 /* Fin globals.css */

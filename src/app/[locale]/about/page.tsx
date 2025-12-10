@@ -1,32 +1,74 @@
 "use client";
-import React from "react";
-import { useIntl } from "react-intl";
+import React, { useState } from "react";
+import { IntlProvider, useIntl } from "react-intl";
 import Link from "next/link";
-import Image from 'next/image';
-import { useContext } from "react";
-import { IntlContext } from "react-intl";
-import { useState } from "react";
-
-
-type Role = {
-    name: string;
-    categories: string[];
-    modality: string[];
-}
+import Image from "next/image";
+import { useParams } from "next/navigation";
+import enMessages from "@/app/locales/en/common.json"
+import esMessages from"@/app/locales/es/common.json"
 
 export default function AboutPage(): React.ReactElement {
 
-    const intl = useIntl();
-    
-    
-    let roles: string[] = [];
-    for (let i = 0; i< 35; i++) {
-        roles[i] = intl.formatMessage({ id: `aboutSection.rol.current.role${i}.name`})
+    //Definir los mensajes provenientes del json respectivo
+    const params = useParams();
+    const locale = params.locale as string;
+    const messages = locale === "en" ? enMessages :esMessages;
         
-    }
+    const intl = useIntl();
 
+    // Acceso a los roles completos
+    const rolesObj = messages.aboutSection.roles.current;
+    const rolesArray = Object.values(rolesObj);
 
+    // Obtener categorías únicas
+    const allCategories = Array.from(
+        new Set(
+            rolesArray.flatMap((role) => role.categories )
+        )
+    );
+
+    // Obtener modalidades únicas
+    const allModalities = Array.from(
+        new Set(
+            rolesArray.flatMap((role) => role.modality )
+        )
+    );
     
+    // Estado para filtros (Multiselect)
+    const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+    const [selectedModalities, setSelectedModalities] = useState<string[]>([]);
+    
+    // Alternar categorías
+    const toggleCategory = (cat: string) => {
+        setSelectedCategories((prev) =>
+            prev.includes(cat)
+            ? prev.filter((c) => c !== cat)
+            : [...prev, cat]
+        );
+    };
+
+    // Alternar modalidades
+    const toggleModality = (mod: string) => {
+        setSelectedModalities((prev) =>
+            prev.includes(mod)
+            ? prev.filter((m) => m !== mod)
+            : [...prev, mod]
+        );
+    };
+
+
+    // Lógica de filtrado real
+    const filteredRoles = rolesArray.filter((role) => {
+        const matchesCategories =
+            selectedCategories.length === 0 ||
+            selectedCategories.every((cat) => role.categories.includes(cat));
+
+        const matchesModalities =
+            selectedModalities.length === 0 ||
+            selectedModalities.every((mod) => role.modality.includes(mod));
+
+        return matchesCategories && matchesModalities;
+        });
 
     const fake = {
         name: "Carolina Navarro",
@@ -42,36 +84,13 @@ export default function AboutPage(): React.ReactElement {
             clients: 100,
         },
         skills: [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "Node.js",
-            "GraphQL",
-            "Postgres",
-            "Tailwind CSS",
-            "Figma",
-        ],
-        experience: [
-            {
-                company: "Bright Labs",
-                role: "Senior Frontend Engineer",
-                period: "2022 — Present",
-                blurb: "Lead the web product team building shared component libraries and design systems used by multiple product orgs.",
-            },
-            {
-                company: "Studio Nova",
-                role: "Frontend Engineer",
-                period: "2019 — 2022",
-                blurb: "Implemented new product features, performance improvements and accessibility upgrades across customer facing apps.",
-            },
-        ],
-        education: [
-            {
-                school: "State University",
-                degree: "B.Sc. in Computer Science",
-                period: "2015 — 2019",
-            },
-        ],
+            "IoT",
+            "Embedded",
+            "Telemetry",
+            "Reverse-Engineering",
+            "Networking",
+            "Project Management"
+        ]
     };
 
     
@@ -160,7 +179,7 @@ export default function AboutPage(): React.ReactElement {
                         <div>
                             <div style={styles.avatar}>
                                 <Image
-                                    src="/images/profile/carolina_navarro.jpg"
+                                    src="/purple_profile.jpeg"
                                     alt={intl.formatMessage({ id: 'aboutSection.avatarAlt', defaultMessage: 'Photo of Carolina Navarro' })}
                                     width={120}
                                     height={120}
@@ -169,9 +188,10 @@ export default function AboutPage(): React.ReactElement {
                             </div>
                         </div>
                         <div style={{ flex: 1 }}>
-                            <h1 style={styles.name}>{intl.formatMessage({ id: 'aboutSection.greeting', defaultMessage: "Hello! I'm Carolina Celeste Navarro Aldoradin" })}</h1>
+                            <h1 style={styles.name}>{intl.formatMessage({ id: 'aboutSection.short_greeting', defaultMessage: "Hello! I'm Carolina Celeste Navarro Aldoradin" })}</h1>
                             <div style={styles.title}>{fake.title} — {fake.location}</div>
-                            <p style={styles.summary}>{intl.formatMessage({ id: 'aboutSection.description', defaultMessage: "I am a technician/engineer from Peru, passionate about creating innovative solutions through technology. I enjoy exploring new technologies and improving my skills through continuous learning." })}</p>
+                            <div style={styles.title}>{intl.formatMessage({ id: 'aboutSection.full_name.title', defaultMessage: "Full" })} - {intl.formatMessage({ id: 'aboutSection.full_name.value', defaultMessage: "Full" })}</div>                            
+                            <p style={styles.summary}>{intl.formatMessage({ id: 'aboutSection.technical_profile', defaultMessage: "I am a technician/engineer from Peru, passionate about creating innovative solutions through technology. I enjoy exploring new technologies and improving my skills through continuous learning." })}</p>
 
                             <div style={styles.statsRow}>
                                 <div style={styles.stat}>
@@ -203,64 +223,222 @@ export default function AboutPage(): React.ReactElement {
 
                     <div style={{ marginTop: 20 }}>
                             <h3 style={styles.sectionTitle}>{intl.formatMessage({ id: 'aboutSection.title', defaultMessage: 'About Me' })}</h3>
-                        <p style={{ color: "#334155", lineHeight: 1.5, marginTop: 8 }}>
-                            I’m a generalist who enjoys building end-to-end product experiences. Recently focused on performance,
-                            accessibility, and building design systems for cross-team reuse. I mentor engineers, collaborate with
-                            product teams, and ship small, iterative wins that move metrics.
-                        </p>
+                            <p style={{ color: "#334155", lineHeight: 1.5, marginTop: 8 }}>
+                                {intl.formatMessage({id: "aboutSection.aboutMe"})}
+                            </p>
+                    </div>
+                    <div style={{ marginTop: 20 }}>
+                        <h3 style={styles.sectionTitle}>{intl.formatMessage({ id: 'aboutSection.keyAchievements.title', defaultMessage: 'Title' })}</h3>
+                    </div>
+                    {/*Aquí se listan los logros clave*/}
+                    <div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#480171ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement1", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#5f02b5ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement2", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#4a02b5ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement3", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#0802b5ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement4", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#2602b5ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement5", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#4d02b5ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement6", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#56088aff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement7", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <h5 style={{ margin: 0, color: "#7302b5ff" }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement8", defaultMessage: ""})}
+                                </h5>
+                            </div>
+                        </div>
                     </div>
 
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginTop: 18 }}>
                         <div>
-                            <h4 style={{ margin: 0, fontSize: 13, color: "#0f172a" }}>Contact</h4>
-                            <ul style={{ paddingLeft: 0, listStyle: "none", marginTop: 8 }}>
-                                <li style={{ fontSize: 14, color: "#475569" }}>{fake.email}</li>
-                                <li style={{ fontSize: 14, color: "#475569", marginTop: 6 }}>{fake.phone}</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h4 style={{ margin: 0, fontSize: 13, color: "#0f172a" }}>Availability</h4>
-                            <div style={{ marginTop: 8, color: "#475569", fontSize: 14 }}>{intl.formatMessage({ id: 'aboutSection.availability', defaultMessage: 'Currently available for new projects. Open to remote or hybrid roles.' })}</div>
-                            <Link href="/contact" style={styles.contactBtn}>
-                                {intl.formatMessage({ id: 'aboutSection.contactTitle', defaultMessage: 'Photo of Carolina Navarro' })}
-                            </Link>
+                            <h2 style={{ margin: 0, fontSize: 13, color: "#ffffffff" }}>{intl.formatMessage({ id: 'aboutSection.autViam.title', defaultMessage: 'Quote.' })}</h2>
+                            <div style={{ marginTop: 8, color: "#475569", fontSize: 14 }}>{intl.formatMessage({ id: 'aboutSection.autViam.quote', defaultMessage: 'I dont know why you are seeing this' })}</div>
                         </div>
                     </div>
                 </section>
 
                 <aside>
                     <div style={{ marginTop: 18, padding: "14px", borderRadius: 12, background: "linear-gradient(180deg, rgba(124,58,237,0.04), rgba(0,212,255,0.02))", border: '1px solid rgba(255,255,255,0.03)' }}>
-                        <strong style={{ display: "block", marginBottom: 6, color: '#e6eefc' }}>{intl.formatMessage({ id: 'aboutSection.availability_title', defaultMessage: 'MY DEDAULT.' })}</strong>
+                        <strong style={{ display: "block", marginBottom: 6, color: '#480395ff' }}>{intl.formatMessage({ id: 'aboutSection.availability_title', defaultMessage: 'MY DEDAULT.' })}</strong>
                         <div style={{ color: "#d6e7ff", fontSize: 13 }}>
                             {intl.formatMessage({ id: 'aboutSection.availability', defaultMessage: 'MY DEDAULT.' })}
                         </div>
+                    </div >
+                    <div style={{ display: "flex", gap: "16px", marginTop: "12px" }}>                        
+                        <a
+                            href="/cv/CV_ES.pdf"
+                            download
+                            style={styles.contactBtn}
+                            >
+                            {intl.formatMessage({ id: "aboutSection.downloadButtonES", defaultMessage: "Download" })}
+                        </a>
+                        <a
+                            href="/cv/CV_ES.pdf"
+                            download
+                            style={styles.contactBtn}
+                            >
+                            {intl.formatMessage({ id: "aboutSection.downloadButtonEN", defaultMessage: "Download" })}
+                        </a>
                     </div>
-                    <button style={styles.contactBtn}>
-                        {intl.formatMessage({id: 'aboutSection.downloadButton', defaultMessage: 'Download'})}
-                    </button>
                     <div> 
-                        
-                       <strong style={{ display: "block", marginBottom: 6, color: '#e6eefc' }}>
-                            {intl.formatMessage({id: 'aboutSection.rol.title'})}
-                        </strong>
-                        <div style={styles.chips}>
-                                    {roles.map((s) => (
-                                        <span key={s} style={styles.chip}>
-                                            {s}
-                                        </span>
-                                    ))}
-                                    
+                                        <section style={styles.card}>
+                    {/* TU CÓDIGO SIGUE IGUAL */}  
+                    
+                    <div style={{ marginTop: 20 }}>
+                        <h3 style={{ fontSize: 16, fontWeight: 700 }}>
+                            {intl.formatMessage({id: "aboutSection.roles.title"})}
+                        </h3>
+
+                        {/* SELECT MULTIPLE */}
+                        <div style={{ marginTop: 20, marginBottom: 10 }}>
+                        <h3 style={{ marginBottom: 8, color: "#dbe9ff", fontWeight: 600 }}>
+                            Filter by Category
+                        </h3>
+
+                        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                            {allCategories.map((cat) => {
+                            const active = selectedCategories.includes(cat);
+
+                            return (
+                                <button
+                                key={cat}
+                                onClick={() => toggleCategory(cat)}
+                                style={{
+                                    padding: "6px 12px",
+                                    borderRadius: 20,
+                                    border: active ? "2px solid #6b00ff" : "1px solid #889",
+                                    background: active
+                                    ? "linear-gradient(135deg,#6b00ff,#00d4ff)"
+                                    : "rgba(255,255,255,0.05)",
+                                    color: active ? "black" : "#dbe9ff",
+                                    fontSize: 13,
+                                    cursor: "pointer",
+                                    transition: "0.15s",
+                                }}
+                                >
+                                {cat}
+                                </button>
+                            );
+                            })}
                         </div>
-                        
+                        <h3 style={{ marginBottom: 8, color: "#dbe9ff", fontWeight: 600 }}>
+                            Filter by Modality
+                        </h3>
+
+                        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                            {allModalities.map((mod) => {
+                                const active = selectedModalities.includes(mod);
+
+                                return (
+                                    <button
+                                    key={mod}
+                                    onClick={() => toggleModality(mod)}
+                                    style={{
+                                        padding: "6px 12px",
+                                        borderRadius: 20,
+                                        border: active ? "2px solid #6b00ff" : "1px solid #889",
+                                        background: active
+                                        ? "linear-gradient(135deg,#6b00ff,#00d4ff)"
+                                        : "rgba(255,255,255,0.05)",
+                                        color: active ? "black" : "#dbe9ff",
+                                        fontSize: 13,
+                                        cursor: "pointer",
+                                        transition: "0.15s",
+                                    }}
+                                    >
+                                    {mod}
+                                    </button>
+                                );
+                            })}
+                        </div>
+                        </div>
+
+                        {/* MOSTRAR ROLES FILTRADOS */}
+                        <div style={{ marginTop: 20 }}>
+                            {filteredRoles.map((role, idx) => (
+                                <div
+                                key={idx}
+                                style={{
+                                    padding: "12px",
+                                    borderRadius: 10,
+                                    background: "rgba(255,255,255,0.06)",
+                                    marginBottom: 10,
+                                    border: "1px solid rgba(255,255,255,0.08)",
+                                }}
+                                >
+                                <h4 style={{ margin: 0, color: "#fff" }}>{role.name}</h4>
+
+                                <div style={{ fontSize: 13, color: "#9aa7c9", marginTop: 4 }}>
+                                    {role.categories.join(" • ")}
+                                </div>
+                                </div>
+                            ))}
+                        </div>
+
+                    </div>
+                </section>
+                      
                         
                     </div>
                     <div>
-                        <div>
                         
-
-                    </div>
-
                     </div>
                    
                 </aside>

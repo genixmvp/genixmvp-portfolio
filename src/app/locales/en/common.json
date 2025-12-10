@@ -9,18 +9,38 @@
     },
     "aboutSection": {
         "title": "About Me",
-        "greeting": "Hello! I am Carolina Celeste Navarro Aldoradin",
-        "description": "Technician/future engineer from Peru, passionate about creating innovative solutions through technology. I enjoy exploring new technologies and improving my skills through continuous learning.",
+        "short_greeting": "Hi, I am Carolina Celeste!",
+        "full_name": {
+            "title": "Full Name",
+            "value": "Carolina Celeste Navarro Aldoradin"},
+        "description": "IoT & Software Engineer building cyber-physical systems.",
         "avatarAlt": "Avatar Image",
+        "technical_profile":"Industrial Mechatronics Technician and Software Engineering student with hands-on experience in IoT, embedded systems, industrial telemetry, and data analysis. I’ve worked with RLTS, industrial protocols, data acquisition pipelines, dashboards, and connected hardware prototypes.",
+        "CTA": "If you’re looking for someone who can bridge hardware, software, and data in real systems, you’re in the right place, or simply you just want to feed a hungry kid, contact me!",
+        "aboutMe": "My discipline was shaped through years of taekwondo training and competition. I also built a solid artistic background as part of the Youth Choir of Sinfonía por el Perú, performing and touring in Europe, including an international competition in Vienna. I’ve consistently taken part in high-performance extracurriculars, leadership roles, and selective academic programs. This trajectory defines how I work: consistency, rigorous training, focus, and the ability to adapt quickly to demanding environments.",
+        "keyAchievements":{
+            "title": "Key Achievements",
+            "achievement1": "11th place at National Level and 1st place at Departmental Level in SENATI Innova 2025 Innovation Contest.",
+            "achievement2": "YOUNGA Delegate in YOUNGA 2023-2024, BridgingTheGap Ventures and Aspire Leadership Program Graduate.",
+            "achievement3": "Laureate Transforma Scholarship holder to pursue Software Engineering at the Peruvian University of Applied Sciences, recognizing academic excellence and potential.",
+            "achievement4": "3rd place at National Level in the Academy of Leaders UNI-ONU sustainable development contest ('Academia de Líderes 2023' program by the National University of Engineering and the United Nations System in Peru), focusing on sustainable development proposals.",
+            "achievement5": "Represented Peru as part of Sinfonia por el Perú main youth choir in the International Choir Competition in Vienna, Austria, as well as tours in Chile and Switzerland.",
+            "achievement6": "Speaker at the She Leads Congress of Women Leaders organized by IEEE WIE UPC and Entrepreneurship and Innovation Congress by National University of San Marcos",
+            "achievement7": "Almost 10 years of Taekwondo practice, achieving 3rd Dan Black Belt and multiple national and departmental medals.",
+            "achievement8": "Recognized for outstanding performance by the Reliability Department at Ferreyros S.A."
+        },
         "availability_title": "Availability",
         "availability": "Currently available for freelance and full-time hybrid and remote roles globally or on-site roles in Peru.",
         "key_skills_title": "Key Skills",
         "key_skills": [
-            "Diseño CAD",   
-            "Programación (Python, C++, JavaScript, etc)",
-            "Ingeniería inversa de protocolos",
-            "IoT",
-            "Gestión de proyectos"
+            "IoT",   
+            "Embedded",
+            "Telemetry",
+            "Reverse-Engineering",
+            "Cybersecurity",
+            "Networking",
+            "Prototyping",
+            "Data Engineering"
         ],
         "contactTitle": "Contact me",
         "stats": {
@@ -28,22 +48,25 @@
             "projects": "Completed Projects",
             "certificates": "Certificates Earned"
         },
-        "downloadButton": "Download Resume",
-        "stories":{
-            "mentality": {
-                "title": "My Mentality",
-                "description": "My professional growth has been guided by the idea that there is always a solution, even when it's not obvious. I come from a background where opportunities are not guaranteed, so I turned every challenge into a driving force. This mentality allowed me to pave my way through two careers, earn competitive scholarships, and advance in technical areas with steep learning curves. This same attitude is what I bring to every project: researching, testing, iterating, and not letting go of the problem until I find the answer.",
-                "quote": "Aut viam inveniam aut faciam. - Hannibal Barca",
-                "translation": "I will find a way or make one. - Hannibal Barca"
-                
-            },
-            "discipline": {
-                    "title": "Discipline",
-                    "description": "Discipline has been a cornerstone of my journey. Balancing rigorous academic pursuits with personal growth required unwavering commitment and time management. This discipline has empowered me to consistently meet deadlines, achieve goals, and maintain a high standard of work in all my endeavors."}
+        "downloadButtonES": "Download resume (Spanish)",
+        "downloadButtonEN": "Download Resume (English)",
+        "autViam":{
+            "title":"A quote",
+            "quote": "Aut viam inveniam aut faciam. - Hannibal Barca",
+            "translation": "I will find a way or make one. - Hannibal Barca"
         },
-        
-        "rol":{
+        "mindset":{
+            "title":"",
+            "description":"My professional growth has been guided by the idea that there is always a solution, even when it's not obvious. I come from a background where opportunities are not guaranteed, so I turned every challenge into a driving force. This mentality allowed me to pave my way through two careers, earn competitive scholarships, and advance in technical areas with steep learning curves. This same attitude is what I bring to every project: researching, testing, iterating, and not letting go of the problem until I find the answer."
+
+        },
+
+        "roles":{
             "title": "Preferred Roles",
+            "filters":{
+                "filterCat": "Filter by category",
+                "filterMod": "Filter by modality"
+            },
             "current": {
                 "role0":
                 {
@@ -362,197 +385,278 @@
                     "level": "Junior"
                 }
             }
+        }
     },
     "projectsSection": {
         "title": "My Projects",
         "description": "A tactical gallery of past work — click a card to inspect the full dossier",
-        "Portfolio": {
-            "name": "Portfolio Website",
-            "description": "A personal portfolio website to showcase my projects and skills.",
-            "problem": "I need to get hired but people don't know my work",
-            "challenge": "Create a responsive and visually appealing portfolio website that highlights my work and expertise.",
-            "achievements": [
-                "Successfully designed and developed a fully responsive portfolio website.",
-                "Implemented internationalization (i18n) to support multiple languages.",
-                "Deployed the website on Vercel for optimal performance and accessibility."
-            ],
-            "skills": ["React", "Next.js", "CSS", "TypeScript", "Vercel", "Github", "i18n"],
-            "steps": [
-                "Design the layout and structure of the portfolio website.",
-                "Develop the frontend using React and Next.js.",
-                "Implement internationalization (i18n) for multiple languages.",
-                "Deploy the website on Vercel for easy access."
-            ],
-            "status": "In Progress",
-            "startDate": "1 Dec 2025",
-            "endDate": "2 Dec 2025"
-        },
-        "senatiInnova":
-        {
-            "name": "Acquisition and Visualization of Data from Mechatronic Module 4.0 with Augmented Reality",
-            "description": "",
-            "problem": "",
-            "challenge": "",
-            "achievements":[
-                "11th place at National Level and 1st place at departmental level"
-            ],
-            "skills": ["Unity","Node-RED", "MQTT", "ThingsBoard", "Google Sheets", "HiveMQ","Autodesk Inventor"],
-            "steps":[],
-            "status": "Completed",
-            "startDate": "",
-            "endDate": "",
-            "collaborators": {
-                "name": "Josue Silva",
-                "phone": "+51 978 451 812"
-        }
-        },
-        "RTLS": {
-            "name": "Real Time Localization System (RTLS)",
-            "description": "A RTLS system for tracking assets in real-time using BLE technology.",
-            "problem": "Tools get lost",
-            "challenge": "Develop a reliable RTLS system that can accurately track the location of assets within a defined area.",
-            "achievements": [
-                "Successfully implemented a BLE-based RTLS system.",
-                "Developed firmware for ESP32 devices to communicate with BLE beacons.",
-                "Created a Node-RED flow to process and visualize location data."
-            ],
-            "skills": ["BLE", "Wi-Fi","Node-RED", "C++", "VSCode", "ESP32", "Networking", "Prototyping", "CAD Design"],
-            "steps": [
-                "Set up BLE beacons and receivers for asset tracking.",
-                "Develop firmware for ESP32 devices using C++ in VSCode.",
-                "Create a Node-RED flow to process and visualize location data.",
-                "Test and optimize the RTLS system for accuracy and reliability."
-            ],
-            "status": "Completed",
-            "startDate": "",
-            "endDate": ""
-        },
-        "ReverseEngineering": {
-            "name": "Hydraulic Bench Reverse Engineering Process",
-            "description": "Project aimed to use telemetry and supervision to keep a history of the Hydraulic bench.",
-            "problem": "We have two hydraulic benches and both use legacy protocols and there is barely no documentation",
-            "challenge": "Reverse engineer the communication protocols used by the hydraulic bench to extract telemetry data.",
-            "achievements":[],
-            "skills": ["Python", "Wireshark", "Networking", "Serial Protocols Analysis", "VSCode", "Putty", "Logic Analyzer", "Realterm"],
-            "steps": [
-                "Capture communication data using Wireshark.",
-                "Analyze the captured data to identify protocols and data structures.",
-                "Develop Python scripts to extract and process telemetry data.",
-                "Implement a supervision system to monitor and log hydraulic bench performance."
-            ],
-            "status": "Completed",
-            "startDate": "",
-            "endDate": ""
-        },
-        "LinealTransformers": {
-            "name": "Lineal Transformers",
-            "description": "Web platform created to ease the learning of lineal transformers for engineering students in Math asignatures. Developed as Final project for the Discrete Mathematics Course.",
-            "problem":" insert problem",
-            "challenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students.",
-            "achievements": [
-                "Developed an interactive web platform with visualizations and examples.",
-                "Implemented user-friendly features to enhance the learning experience.",
-                "Received positive feedback from students and educators."
-            ],
-            "skills": ["JavaScript", "Wireshark", "Networking", "Serial Protocols Analysis"],
-            "steps": [
-                "Design the web platform layout and user interface.",
-                "Develop interactive features and visualizations using JavaScript.",
-                "Test the platform with engineering students and gather feedback.",
-                "Refine the platform based on user feedback to improve usability."
-            ],
-            "status": "In Progress",
-            "startDate": "",
-            "endDate": "",
-            "link": ""
-        },
-        "TinkuyhubJuntta": {
-            "name": "Tinkuyhub & Juntta Platforms Integration",
-            "description": "HTTPS integration of Tinkuyhub & Juntta platforms to create an account for both Tinkuyhub and Juntta in Tinkuyhub website.",
-            "problem":" insert problem",
-            "challenge": "Reduce the friction in the signup process by integrating both platforms for a seamless user experience.",
-            "achievements": [
-                "Successfully designed and developed an e-commerce platform.",
-                "Implemented secure payment processing and order management features.",
-                "Optimized the platform for performance and user experience."
-            ],
-            "skills": ["Moddle", "HTTP", "PHP"],
-            "steps": [
-                "Design the e-commerce platform layout and user interface.",
-                "Develop frontend features using React.",
-                "Implement backend functionalities with Node.js, Express, and MongoDB.",
-                "Integrate secure payment processing and order management systems."
-            ],
-            "status": "Completed",
-            "startDate": "",
-            "endDate": ""
-        },
-        "AIAvatar": {
-            "name": "AI Avatar Development",
-            "description": "Development of AI-driven avatars for interactive applications.",
-            "problem":" insert problem",
-            "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
-            "achievements": [
-                "Successfully developed AI avatars with natural language processing capabilities.",
-                "Implemented real-time interaction features for enhanced user engagement.",
-                "Deployed AI avatars in various interactive applications."
-            ],
-            "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
-            "steps": [
-                "Design the AI avatar models and interaction scenarios.",
-                "Develop natural language processing algorithms using Python and TensorFlow.",
-                "Implement real-time interaction features for user engagement.",
-                "Deploy AI avatars in interactive applications and gather user feedback."
-            ],
-            "status": "In Progress",
-            "startDate": "",
-            "endDate": ""
-        },
-        "youngaCommunique":{
-            "name": "YOUNGA Communique 2023-2024",
-            "description": "Communique description here.",
-            "problem":" insert problem",
-            "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
-            "achievements": [
-                "Successfully developed AI avatars with natural language processing capabilities.",
-                "Implemented real-time interaction features for enhanced user engagement.",
-                "Deployed AI avatars in various interactive applications."
-            ],
-            "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
-            "steps": [
-                "Design the AI avatar models and interaction scenarios.",
-                "Develop natural language processing algorithms using Python and TensorFlow.",
-                "Implement real-time interaction features for user engagement.",
-                "Deploy AI avatars in interactive applications and gather user feedback."
-            ],
-            "status": "In Progress",
-            "startDate": "",
-            "endDate": "",
-            "link": ""
+        "projects":{
+            "senatiInnova":
+            {
+                "name": "Acquisition and Visualization of Data from Mechatronic Module 4.0 with Augmented Reality",
+                "description": "Monitoring and data acquisition system prototype for SENATI Innovation National Contest",
+                "problem": "",
+                "challenge": "24-hour limit for the prototype development and presentation.",
+                "achievements":[
+                    "11th place at National Level",
+                    "1st place at departmental level"
+                ],
+                "skills": ["AR", "Unity","Node-RED", "MQTT", "ThingsBoard", "Google Sheets", "HiveMQ","Autodesk Inventor", "S7"],
+                "steps":{
+                    "PLC": {
+                        "title": "Siemens PLC Data Adquisition",
+                        "description": "Use S7 Node-RED library to read data from Siemens S7-1200 PLC via Ethernet.",
+                        "image": "/projects/senatiInnova/mechatronic_module1.jpg",
+                        "width": 200,
+                        "height": 300
+                    },
+                    "MQTT": {
+                        "title": "MQTT-NodeRED Flow",
+                        "description": "Configured HiveMQ MQTT broker to facilitate communication between the PLC and data visualization platforms.",
+                        "image": "/projects/senatiInnova/node_red_flow.jpg",
+                        "width": 500,
+                        "height": 300
+                    },
+                    "UnityApp": {
+                        "title": "Unity App",
+                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "image": "/projects/senatiInnova/unity_app_home.jpg",
+                        "width": 200,
+                        "height": 350
+                    },
+                    "UnityApp3d": {
+                        "title": "Sensors and Actuators 3D Models Visualization",
+                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "image": "/projects/senatiInnova/unity_app_3d_model.jpg",
+                        "width": 200,
+                        "height": 350
+                    },
+                    "UnityAppDatasheet": {
+                        "title": "Sensors and Actuators Datasheet Visualization",
+                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "image": "/projects/senatiInnova/unity_app_datasheet.jpg",
+                        "width": 200,
+                        "height": 350
+                    },
+                    "UnityAppRTData": {
+                        "title": "Real-Time Data Visualization",
+                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "image": "/projects/senatiInnova/unity_app_rt_data.jpg",
+                        "width": 200,
+                        "height": 350
+                    },
+                    "Dashboard":{
+                        "title": "ThingsBoard Dashboard",
+                        "description": "Created a dashboard using ThingsBoard to visualize real-time data from the Mechatronic Module 4.0.",
+                        "image": "/projects/senatiInnova/thingsboard_dashboard.jpg",
+                        "width": 500,
+                        "height": 300
+                    },
+                    "GoogleSheets": {
+                        "title": "Google Sheets Data Logging",
+                        "description": "Implemented a Node-RED Google Sheets node to log data into Google Sheets for historical analysis. Stored values include Air Flow, Product Quantity, current production, total flow, voltage levels, current levels, power, and ON/OFF state of capacitive sensor.",
+                        "link": "https://docs.google.com/spreadsheets/d/1d-NvjFazP4KH8B6VcGNnyBCx_JznZEGK1k9XKjmvrj8/edit?usp=sharing",
+                        "image": "/projects/senatiInnova/google_sheets_database.png",
+                        "width": 400,
+                        "height": 500
+                    }
+                    
+                },
+                "status": "Completed",
+                "startDate": "12/06/2025",
+                "endDate": "12/06/2025",
+                "collaborators": {
+                    "name": "Josue Silva",
+                    "phone": "+51 978 451 812"
+                }
+            },
+            "RTLS": {
+                "name": "Real Time Localization System (RTLS)",
+                "description": "A RTLS system for tracking assets in real-time using BLE technology.",
+                "problem": "Tools get lost",
+                "challenge": "Develop a reliable RTLS system that can accurately track the location of assets within a defined area.",
+                "achievements": [
+                    "Successfully implemented a BLE-based RTLS system.",
+                    "Developed firmware for ESP32 devices to communicate with BLE beacons.",
+                    "Created a Node-RED flow to process and visualize location data."
+                ],
+                "skills": ["BLE", "Wi-Fi","Node-RED", "C++", "VSCode", "ESP32", "Networking", "Prototyping", "CAD Design"],
+                "emailPrompt":"Input a valid email to unlock the pdf",
+                "emailPlaceholder":"Your email",
+                "unlockButton":"Unlock PDF",
+                "status": "Completed",
+                "startDate": "",
+                "endDate": ""
+            },
+            "reverseEngineering": {
+                "name": "Hydraulic Bench Reverse Engineering Process",
+                "description": "Project aimed to use telemetry and supervision to keep a history of the Hydraulic bench.",
+                "problem": "We have two hydraulic benches and both use legacy protocols and there is barely no documentation",
+                "challenge": "Reverse engineer the communication protocols used by the hydraulic bench to extract telemetry data.",
+                "achievements":[],
+                "skills": ["Python", "Wireshark", "Networking", "Serial Protocols Analysis", "VSCode", "Putty", "Logic Analyzer", "Realterm"],
+                "steps": [
+                    "Capture communication data using Wireshark.",
+                    "Analyze the captured data to identify protocols and data structures.",
+                    "Develop Python scripts to extract and process telemetry data.",
+                    "Implement a supervision system to monitor and log hydraulic bench performance."
+                ],
+                "status": "Completed",
+                "startDate": "",
+                "endDate": ""
+            },
+            "linealTransformers": {
+                "name": "Lineal Transformers",
+                "description": "Web platform created to ease the learning of lineal transformers for engineering students in Math asignatures. Developed as Final project for the Discrete Mathematics Course.",
+                "problem":" insert problem",
+                "challenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students.",
+                "achievements": [
+                    "Developed an interactive web platform with visualizations and examples.",
+                    "Implemented user-friendly features to enhance the learning experience.",
+                    "Received positive feedback from students and educators."
+                ],
+                "skills": ["JavaScript", "Wireshark", "Networking", "Serial Protocols Analysis"],
+                "steps": [
+                    "Design the web platform layout and user interface.",
+                    "Develop interactive features and visualizations using JavaScript.",
+                    "Test the platform with engineering students and gather feedback.",
+                    "Refine the platform based on user feedback to improve usability."
+                ],
+                "status": "In Progress",
+                "startDate": "",
+                "endDate": "",
+                "link": ""
+            },
+            "TinkuyhubJuntta": {
+                "name": "Tinkuyhub & Juntta Platforms Integration",
+                "description": "HTTPS integration of Tinkuyhub & Juntta platforms to create an account for both Tinkuyhub and Juntta in Tinkuyhub website.",
+                "problem":" insert problem",
+                "challenge": "Reduce the friction in the signup process by integrating both platforms for a seamless user experience.",
+                "achievements": [
+                    "Successfully designed and developed an e-commerce platform.",
+                    "Implemented secure payment processing and order management features.",
+                    "Optimized the platform for performance and user experience."
+                ],
+                "skills": ["Moddle", "HTTP", "PHP"],
+                "steps": [
+                    "Design the e-commerce platform layout and user interface.",
+                    "Develop frontend features using React.",
+                    "Implement backend functionalities with Node.js, Express, and MongoDB.",
+                    "Integrate secure payment processing and order management systems."
+                ],
+                "status": "Completed",
+                "startDate": "",
+                "endDate": ""
+            },
+            "AIAvatar": {
+                "name": "AI Avatar Development",
+                "description": "Development of AI-driven avatars for interactive applications.",
+                "problem":" insert problem",
+                "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+                "achievements": [
+                    "Successfully developed AI avatars with natural language processing capabilities.",
+                    "Implemented real-time interaction features for enhanced user engagement.",
+                    "Deployed AI avatars in various interactive applications."
+                ],
+                "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
+                "steps": [
+                    "Design the AI avatar models and interaction scenarios.",
+                    "Develop natural language processing algorithms using Python and TensorFlow.",
+                    "Implement real-time interaction features for user engagement.",
+                    "Deploy AI avatars in interactive applications and gather user feedback."
+                ],
+                "status": "In Progress",
+                "startDate": "",
+                "endDate": ""
+            },
+            "youngaCommunique":{
+                "name": "YOUNGA Communique 2023-2024",
+                "description": "Communique description here.",
+                "problem":" insert problem",
+                "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+                "achievements": [
+                    "Successfully developed AI avatars with natural language processing capabilities.",
+                    "Implemented real-time interaction features for enhanced user engagement.",
+                    "Deployed AI avatars in various interactive applications."
+                ],
+                "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
+                "steps": [
+                    "Design the AI avatar models and interaction scenarios.",
+                    "Develop natural language processing algorithms using Python and TensorFlow.",
+                    "Implement real-time interaction features for user engagement.",
+                    "Deploy AI avatars in interactive applications and gather user feedback."
+                ],
+                "status": "In Progress",
+                "startDate": "",
+                "endDate": "",
+                "link": "string"
 
-        },
-        "academiaLideres":{
-            "name": "proposals for sustainable development",
-            "description": "description gaaaa",
-            "problem":" insert problem",
-            "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
-            "achievements": [
-                "Successfully developed AI avatars with natural language processing capabilities.",
-                "Implemented real-time interaction features for enhanced user engagement.",
-                "Deployed AI avatars in various interactive applications."
-            ],
-            "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
-            "steps": [
-                "Design the AI avatar models and interaction scenarios.",
-                "Develop natural language processing algorithms using Python and TensorFlow.",
-                "Implement real-time interaction features for user engagement.",
-                "Deploy AI avatars in interactive applications and gather user feedback."
-            ],
-            "status": "Completed",
-            "startDate": "",
-            "endDate": "",
-            "link": ""
-            
+            },
+            "academiaLideres":{
+                "name": "proposals for sustainable development",
+                "description": "description gaaaa",
+                "problem":" insert problem",
+                "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+                "achievements": [
+                    "Successfully developed AI avatars with natural language processing capabilities.",
+                    "Implemented real-time interaction features for enhanced user engagement.",
+                    "Deployed AI avatars in various interactive applications."
+                ],
+                "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
+                "steps": [
+                    "Design the AI avatar models and interaction scenarios.",
+                    "Develop natural language processing algorithms using Python and TensorFlow.",
+                    "Implement real-time interaction features for user engagement.",
+                    "Deploy AI avatars in interactive applications and gather user feedback."
+                ],
+                "status": "Completed",
+                "startDate": "string",
+                "endDate": "string",
+                "link": "string"       
+            },
+            "monico":{
+                "name": "Monico mCore SDR",
+                "description": "Configuration and testing of Monico mCore SDR for Telemetry applications.",
+                "problem":" insert problem",
+                "challenge": "Create a user-friendly e-commerce platform that allows customers to browse and purchase products easily.",
+                "achievements": [
+                    "Successfully designed and developed an e-commekmfdsklmsdfrce platform.",
+                    "Implemented secure payment processing and order management features.",
+                    "Optimized the platform for performance and user experience."
+                ],
+                "skills": ["React", "Node.js", "Express", "MongoDB", "Stripe", "CSS"],
+                "steps": [
+                    "Design the e-commerce platform layout and user interface.",
+                    "Develop frontend features using React.",
+                    "Implement backend functionalities with Node.js, Express, and MongoDB.",
+                    "Integrate secure payment processing and order management systems."
+                ],
+                "status": "Completed",
+                "startDate": "",
+                "endDate": ""
+            },
+            "theCvGen":{
+                "name": "The CV Gen",
+                "description": "The CV Gen is an AI-powered web application that generates professional resumes based on user input. It leverages advanced language models to create tailored CVs that highlight the user's skills, experience, and achievements effectively.",
+                "problem":"Creating a well-structured and professional resume can be challenging for many individuals, especially those with limited experience in resume writing.",
+                "challenge": "Develop an intuitive web application that utilizes AI to generate high-quality resumes quickly and easily.",
+                "achievements": [
+                    "Successfully developed a user-friendly web application using Next.js.",
+                    "Integrated OpenAI's language model to generate personalized resumes.",
+                    "Implemented a seamless user interface for easy input and resume generation."
+                ],
+                "skills": ["Next.js", "React", "PuterAI", "JavaScript", "CSS"],
+                "steps": [
+                    "Design the web application layout and user interface using Next.js and React.",
+                    "Integrate OpenAI's API to enable AI-driven resume generation.",
+                    "Implement features for user input and customization of resumes.",
+                    "Test the application for usability and performance, making improvements as needed."
+                ],
+                "status": "In Progress",
+                "startDate": "2024-01-15",
+                "endDate": "",
+                "link": ""
+            }
         }
         
     },
@@ -566,62 +670,213 @@
         "tagline":" Offering a range of services to help you achieve your goals.",
         "filter_all": "All",
         "popular": "Popular",
-        "sideTitle": "Lo que puedo hacer por ti",
-        "sideText": "Brindo una variedad de servicios para satisfacer tus necesidades. Ya sea que busques consultoría experta, desarrollo web personalizado, diseño CAD detallado o soluciones innovadoras de avatares AI, tengo las habilidades y la experiencia para ofrecer resultados de alta calidad.",
-        "sideItem1": "Consultoría experta en desarrollo de software y arquitectura de sistemas.",
-        "sideItem2": "Desarrollo de aplicaciones web personalizadas adaptadas a las necesidades de tu negocio.",
-        "sideItem3": "Creación y modificación de modelos CAD detallados para ingeniería y fabricación.",
-        "consulting": {
-            "name": "Consulting",
-            "description": "Providing expert advice on software development and system architecture.",
-            "prices": {
-                "basic": "$10/hour",
-                "premium": "$30/hour"
+        "sideTitle": "What can I do for you",
+        "sideText": "I offer the services listed here to satisfy for techie needs.",
+        "sideItem1": "Flexible Delivery Timelines: ",
+        "littlesideText1": "Need it faster? For an additional premium, project completion times can be accelerated to meet your urgent deadlines.",
+        "sideItem2": "Highly Competitive and Accessible Pricing: ",
+        "littlesideText2": "Offering high-quality solutions with rates designed to be accessible, ensuring great value for your investment.",
+        "sideItem3": "Deeply Personalized Solutions: ",
+        "littlesideText3": "Every project is custom-tailored to your unique needs, ensuring a highly specialized and results-driven outcome.",
+        "services": {
+            "webdevelopment": {
+                "name": "Web Development",
+                "description": "Custom, high-performance web applications built using React, Next.js, Node.js, and REST APIs. Includes responsive UI, backend development, automation workflows, and dashboard creation.",
+                "prices": {
+                    "from": "$50/project",
+                    "to": "$1,200/project"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
             },
-            "modality": ["On-site", "Hybrid", "Remote"]
-        },
-        "webdevelopment": {
-            "name": "Web Development",
-            "description": "Building custom web applications tailored to your business needs.",
-            "prices": {
-                "basic": "$300/project",
-                "premium": "$800/project"
+
+            "caddesign": {
+                "name": "CAD Design",
+                "description": "2D/3D CAD modeling for mechanical components, enclosures, product concepts, and engineering documentation. Suitable for manufacturing and R&D.",
+                "prices": {
+                "from": "$15/piece",
+                "to": "$100/piece"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
             },
-            "modality": ["On-site", "Hybrid", "Remote"]
-        },
-        "caddesign": {
-            "name": "CAD Design",
-            "description": "Creating and modifying detailed CAD models for engineering and manufacturing purposes.",
-            "prices": {
-                "basic": "$200/model",
-                "premium": "$600/model"
+
+            "aiavatars": {
+                "name": "AI Avatars",
+                "description": "Creation of AI-driven avatars with NLP, speech synthesis, and real-time interaction. Ideal for customer service, branding, education, and interactive applications.",
+                "prices": {
+                "from": "$200/avatar",
+                "to": "$900/avatar"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
             },
-            "modality": ["On-site", "Hybrid", "Remote"]
-        },
-        "aiavatars": {
-            "name": "AI Avatars",
-            "description": "Designing and implementing AI-driven avatars for interactive applications.",
-            "prices": {
-                "basic": "$500/avatar",
-                "premium": "$700/avatar"
+
+            "iotdevelopment": {
+                "name": "IoT Development",
+                "description": "End-to-end IoT solutions including embedded firmware (ESP32), BLE scanning, MQTT pipelines, sensor integration, and real-time device dashboards.",
+                "prices": {
+                "from": "$200/project",
+                "to": "$1,500/project"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
             },
-            "modality": ["On-site", "Hybrid", "Remote"]
+
+            "embeddedprototyping": {
+                "name": "Hardware & Embedded Prototyping",
+                "description": "Development of functional prototypes using sensors, microcontrollers, wireless modules, and custom electronics. Suitable for proof-of-concept and MVPs.",
+                "prices": {
+                "from": "$150/prototype",
+                "to": "$700/prototype"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
+            },
+
+            "telemetrysystems": {
+                "name": "Telemetry & Data Acquisition Systems",
+                "description": "Integration of sensors, BLE beacons, MQTT telemetry, cloud dashboards, and data collection pipelines for real-time monitoring.",
+                "prices": {
+                "from": "$250/project",
+                "to": "$1,800/project"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
+            },
+
+            "dataengineering": {
+                "name": "Data Engineering & Analytics",
+                "description": "ETL pipelines, data cleaning, Looker Studio dashboards, BigQuery queries, and actionable reporting for business or industrial data.",
+                "prices": {
+                "from": "$100/dashboard",
+                "to": "$600/dashboard"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
+            },
+
+            "reverseengineering": {
+                "name": "Reverse Engineering (Non-Sensitive Systems)",
+                "description": "Protocol analysis, firmware exploration, device mapping, Wireshark packet inspection, and compatibility research.",
+                "prices": {
+                "from": "$90/session",
+                "to": "$1,200/project"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
+            },
+
+            "automation": {
+                "name": "Process Automation",
+                "description": "Automation scripts, bots, and workflow tools using Python, JavaScript, and APIs. Ideal for reducing repetitive tasks and optimizing operations.",
+                "prices": {
+                "from": "$20/script",
+                "to": "$400/system"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
+            },
+
+            "aichatbot": {
+                "name": "AI Chatbot Development",
+                "description": "Custom AI chatbots using GPT-4 and other language models for customer support, lead generation, and user engagement.",
+                "prices": {
+                "from": "$150/bot",
+                "to": "$1,000/bot"
+                },
+                "modality": ["On-site", "Hybrid", "Remote"]
+            }
         }
 
     },
     "contactSection": {
         "title": "Contact Me",
         "description": "Feel free to reach out for collaborations or inquiries.",
-        "form": {
+        "data": {
             "name": "Carolina Celeste Navarro Aldoradin",
             "email1": "cnava.aldoradin@gmail.com",
-            "email2": "genix.mvp@gmail.com",
+            "emailDev": "genix.mvp@gmail.com",
             "Instagram": "@ccelestenava",
             "linkedIn": "www.linkedin.com/in/carolina-celeste-navarro-aldoradin",
             "gitHub": "github.com/genixmvp",
+            "location": "La Molina, Lima - Peru",
             "message": "Message",
             "submit": "Send"
+        },
+        "references": {
+            "title": "References",
+            "description": "Unlock references with a valid email address.",
+            "input_placeholder": "Enter your email",
+            "button_text": "Get References",
+            "free": "Feel free to reach out to any of the following references to learn more about my work ethic, skills, and contributions.",
+            "notice": "Notice the languages spoken by each reference to facilitate verbal communication.",
+            "people":{
+                "ref1":{
+                    "name": "Carlos Cossio Leverato",
+                    "position": "Chief of Operations of the CRC at Ferreyros",
+                    "phone": "+51 990 196 925",
+                    "email": "carlos.cossio@ferreyros.com.pe",
+                    "languages_spoken": ["Spanish"]
+                },
+                "ref2":{
+                    "name": "Maria Elena Alarco",
+                    "position": "Co-founder at Give Generando Oportunidades",
+                    "phone": "+51 997 905 605",
+                    "email": "",
+                    "languages_spoken": ["Spanish"]
+
+                },
+                "ref3":{
+                    "name": "Alberto Franco D Alonso",
+                    "position": "Workshop Project Manager at Ferreyros",
+                    "phone": "+51 995 879 134",
+                    "email": "",
+                    "languages_spoken": ["Spanish"]
+
+                },
+                "ref4":{
+                    "name": "Claudia Lezama",
+                    "position": "Founder at Give Generando Oportunidades",
+                    "phone": "+51 997 583 201",
+                    "email": "",
+                    "languages_spoken": ["Spanish"]
+                },
+                "ref5":{
+                    "name": "Edson Mendiolaza",
+                    "position": "Professor at the Faculty of Engineering of UPC",
+                    "phone": "+51 994 693 900",
+                    "email": "pcsiemen@upc.edu.pe",
+                    "languages_spoken": ["Spanish", "English"]
+
+                },
+                "ref6":{
+                    "name": "Lynn Marin Flores",
+                    "position": "Electronics Laboratory Engineer at Ferreyros",
+                    "phone": "+51 964 345 832",
+                    "email": "lynn.marin@ferreyros.com.pe",
+                    "languages_spoken": ["Spanish", "English"]
+                },
+                "ref7":{
+                    "name": "Adel Latif",
+                    "position": "Project Manager at Deloitte Touche Tomatsu Limited (DTTL)",
+                    "phone": "+1 (416) 414-8504",
+                    "email": "adelatif@deloitte.ca",
+                    "languages_spoken": ["English"]
+                },
+                "ref8":{
+                    "name": "Dany Geler Ríos Gutiérrez",
+                    "position": "Head II of the School of Electrotechnics at Senati",
+                    "phone": "+51 988 665 546",
+                    "email": "drios@senati.edu.pe",
+                    "languages_spoken": ["Spanish"]
+                },
+                "ref9":{
+                    "name": "Abel Ramirez",
+                    "position": "CRC Supervisor at Ferreyros",
+                    "phone": "+51 920 489 262",
+                    "email": "abel.ramirez@ferreyros.com.pe",
+                    "languages_spoken": ["Spanish"]
+                },
+                "ref10":{
+                    "name": "Luis Aguilar",
+                    "position": "Engineering Manager at Ferreyros",
+                    "phone": "+51 996 907 599",
+                    "email": "luis.aguilar@ferreyros.com.pe",
+                    "languages_spoken": ["Spanish"]
+                }
+            }
         }
     }
-}
 }

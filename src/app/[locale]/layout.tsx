@@ -7,6 +7,9 @@ import Header from "@/components/Header";
 import { redirect } from "next/navigation";
 import ClickSpark from "@/components/ClickSpark";
 import Cursor from "@/components/Cursor";
+import { Inter } from 'next/font/google';
+import { MusicProvider } from '@/context/MusicContext';
+import BackgroundMusic from '@/components/BackgroundMusic';
 const SUPPORTED_LOCALES = ["en", "es"];
 
 export const metadata: Metadata = {
@@ -74,9 +77,13 @@ export default async function LocaleRootLayout({
     {/* ClickSpark va AQUÍ, antes del IntlProvider */}
     <ClickSpark />
     <Cursor />
+    
     <IntlProviderWrapper locale={locale} messages={messages}>
-      <Header />
-      {children}
+      <MusicProvider>
+        <BackgroundMusic />
+        <Header />
+        {children}
+      </MusicProvider>
     </IntlProviderWrapper>
   </div>
 );
