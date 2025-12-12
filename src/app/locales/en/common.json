@@ -23,11 +23,12 @@
             "achievement1": "11th place at National Level and 1st place at Departmental Level in SENATI Innova 2025 Innovation Contest.",
             "achievement2": "YOUNGA Delegate in YOUNGA 2023-2024, BridgingTheGap Ventures and Aspire Leadership Program Graduate.",
             "achievement3": "Laureate Transforma Scholarship holder to pursue Software Engineering at the Peruvian University of Applied Sciences, recognizing academic excellence and potential.",
-            "achievement4": "3rd place at National Level in the Academy of Leaders UNI-ONU sustainable development contest ('Academia de Líderes 2023' program by the National University of Engineering and the United Nations System in Peru), focusing on sustainable development proposals.",
+            "achievement4": "3rd place at National Level in the Academy of Leaders UNI-ONU sustainable development contest ('Academia de Líderes 2023' program by the National University of Engineering and the United Nations System in Peru), focusing on sustainable development proposals. Recognized by the National Society of Industries (Peru) for this matter",
             "achievement5": "Represented Peru as part of Sinfonia por el Perú main youth choir in the International Choir Competition in Vienna, Austria, as well as tours in Chile and Switzerland.",
             "achievement6": "Speaker at the She Leads Congress of Women Leaders organized by IEEE WIE UPC and Entrepreneurship and Innovation Congress by National University of San Marcos",
             "achievement7": "Almost 10 years of Taekwondo practice, achieving 3rd Dan Black Belt and multiple national and departmental medals.",
-            "achievement8": "Recognized for outstanding performance by the Reliability Department at Ferreyros S.A."
+            "achievement8": "Recognized for outstanding performance by the Reliability Department at Ferreyros S.A.",
+            "achievement9": "Forjando Caminos program graduate by the Give Generando Oportunidades Association and sponsored by Ferreyros to study Industrial Mechatronics."
         },
         "availability_title": "Availability",
         "availability": "Currently available for freelance and full-time hybrid and remote roles globally or on-site roles in Peru.",
@@ -389,33 +390,34 @@
     },
     "projectsSection": {
         "title": "My Projects",
-        "description": "A tactical gallery of past work — click a card to inspect the full dossier",
+        "description": "A gallery of some of my past and current work.",
+        "backToProjects": "Back to projects",
         "projects":{
             "senatiInnova":
             {
                 "name": "Acquisition and Visualization of Data from Mechatronic Module 4.0 with Augmented Reality",
-                "description": "Monitoring and data acquisition system prototype for SENATI Innovation National Contest",
-                "problem": "",
-                "challenge": "24-hour limit for the prototype development and presentation.",
+                "description": "Monitoring and data acquisition system prototype for SENATI Innovation National Contest, making possible the visualization of the Classification and Dosification 4.0 Modules at SENATI",
+                "problem": "During our career and our learning process with the 4.0 industry Mechatronic Modules, we have some difficulties to quickly detect faults during PLC configuration and slowing down the learning process. Additionally, there is no historical data logging to analyze abnormal behavior or identify persistent issues in sensors and actuators. This lack of traceability prevents effective preventive maintenance and limits the optimization of the module’s performance. As a result, both students and technicians must rely on slow and imprecise manual verification.",
+                "challenge": "This prototype was made in around 24 hours.",
                 "achievements":[
                     "11th place at National Level",
                     "1st place at departmental level"
                 ],
-                "skills": ["AR", "Unity","Node-RED", "MQTT", "ThingsBoard", "Google Sheets", "HiveMQ","Autodesk Inventor", "S7"],
+                "skills": ["AR", "IoT", "Unity","Node-RED", "MQTT", "ThingsBoard", "Google Sheets", "HiveMQ", "S7", "Autodesk Inventor"],
                 "steps":{
                     "PLC": {
                         "title": "Siemens PLC Data Adquisition",
-                        "description": "Use S7 Node-RED library to read data from Siemens S7-1200 PLC via Ethernet.",
+                        "description": "We used the S7 Node-RED library to read data from the 2 Siemens S7-1200 PLCs that control the Dosification and Clasification module via Ethernet (TCP Port 102). The S7 protocol is Siemens proprietary communication language.",
                         "image": "/projects/senatiInnova/mechatronic_module1.jpg",
                         "width": 200,
                         "height": 300
                     },
                     "MQTT": {
-                        "title": "MQTT-NodeRED Flow",
-                        "description": "Configured HiveMQ MQTT broker to facilitate communication between the PLC and data visualization platforms.",
+                        "title": "Node-RED Flow",
+                        "description": "Modules' data sources from the PLCs are the S7 Nodes in both the Node-RED flows of the Dosification and Classification Module. The next node is a function node used to separate each value and parse the content in a JSON format. Later, we added a new node to limit 1 message each 5 seconds, so the system is can process better the data. We configured two MQTT nodes, one is sending the data to the Unity App and the other to the Thingsboard dashboard. For the Unity app, we used the HiveMQ MQTT broker. Also, we added a GSheet Node to append the data into a log. Lastly, we added a couple of debug nodes to verify that the data is being sent correctly.",
                         "image": "/projects/senatiInnova/node_red_flow.jpg",
-                        "width": 500,
-                        "height": 300
+                        "width": 900,
+                        "height": 450
                     },
                     "UnityApp": {
                         "title": "Unity App",
@@ -426,21 +428,21 @@
                     },
                     "UnityApp3d": {
                         "title": "Sensors and Actuators 3D Models Visualization",
-                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "description": "Using Autodesk Inventor, we designed the 3D CAD models for some sensors and actuators, and placing them around the screen of our Unity app with AR.",
                         "image": "/projects/senatiInnova/unity_app_3d_model.jpg",
                         "width": 200,
                         "height": 350
                     },
                     "UnityAppDatasheet": {
-                        "title": "Sensors and Actuators Datasheet Visualization",
-                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "title": "Sensors and Actuators Datasheets in Unity App",
+                        "description": "As part of making the students and maintenance personnel experience more suitable to get the right information about the module's elements, we included datasheets for sensores and actuators inside our Unity app.",
                         "image": "/projects/senatiInnova/unity_app_datasheet.jpg",
                         "width": 200,
                         "height": 350
                     },
                     "UnityAppRTData": {
                         "title": "Real-Time Data Visualization",
-                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "description": "Using the real-time data comming from the MQTT topic from the Mechatronic Module 4.0, we placed in Unity app's screen.",
                         "image": "/projects/senatiInnova/unity_app_rt_data.jpg",
                         "width": 200,
                         "height": 350
@@ -454,7 +456,7 @@
                     },
                     "GoogleSheets": {
                         "title": "Google Sheets Data Logging",
-                        "description": "Implemented a Node-RED Google Sheets node to log data into Google Sheets for historical analysis. Stored values include Air Flow, Product Quantity, current production, total flow, voltage levels, current levels, power, and ON/OFF state of capacitive sensor.",
+                        "description": "Implemented a Node-RED Google Sheets node to log data into Google Sheets for historical analysis. Stored values include Air Flow, Product Quantity, current production, total flow, voltage levels, current levels, power, and ON/OFF state of capacitive sensor for both Clasification and Dosification.",
                         "link": "https://docs.google.com/spreadsheets/d/1d-NvjFazP4KH8B6VcGNnyBCx_JznZEGK1k9XKjmvrj8/edit?usp=sharing",
                         "image": "/projects/senatiInnova/google_sheets_database.png",
                         "width": 400,
@@ -473,13 +475,6 @@
             "RTLS": {
                 "name": "Real Time Localization System (RTLS)",
                 "description": "A RTLS system for tracking assets in real-time using BLE technology.",
-                "problem": "Tools get lost",
-                "challenge": "Develop a reliable RTLS system that can accurately track the location of assets within a defined area.",
-                "achievements": [
-                    "Successfully implemented a BLE-based RTLS system.",
-                    "Developed firmware for ESP32 devices to communicate with BLE beacons.",
-                    "Created a Node-RED flow to process and visualize location data."
-                ],
                 "skills": ["BLE", "Wi-Fi","Node-RED", "C++", "VSCode", "ESP32", "Networking", "Prototyping", "CAD Design"],
                 "emailPrompt":"Input a valid email to unlock the pdf",
                 "emailPlaceholder":"Your email",
@@ -490,60 +485,86 @@
             },
             "reverseEngineering": {
                 "name": "Hydraulic Bench Reverse Engineering Process",
-                "description": "Project aimed to use telemetry and supervision to keep a history of the Hydraulic bench.",
-                "problem": "We have two hydraulic benches and both use legacy protocols and there is barely no documentation",
-                "challenge": "Reverse engineer the communication protocols used by the hydraulic bench to extract telemetry data.",
-                "achievements":[],
-                "skills": ["Python", "Wireshark", "Networking", "Serial Protocols Analysis", "VSCode", "Putty", "Logic Analyzer", "Realterm"],
-                "steps": [
-                    "Capture communication data using Wireshark.",
-                    "Analyze the captured data to identify protocols and data structures.",
-                    "Develop Python scripts to extract and process telemetry data.",
-                    "Implement a supervision system to monitor and log hydraulic bench performance."
-                ],
+                "description": "Reverse Engineering process for two HTCs with legacy protocols and limited documentation.",
+                "problem": "The hydraulic benches mentioned in this project lacked configuration documentation and provided no access to their internal communication protocol. It was requested for the company to be able to access to this data and send it to their environment automatically (to be able to setup a telemetry system), meaning it was not plausible to download and upload reports manually, because that work was already being done, but didn't give satisfactory results for historic logging and data analysis. My work was to get to know this two machines' hardware and software architectures, identifying the communication interface and protocols involved, design a pipeline to extract, 'translate' and transport data from this SCADA to our environment (local server or cloud). Without this data, the company would not be able to monitor the equipment remotely, perform data analysis, or implement predictive maintenance strategies.",
+                "challenge": "Both Hydraulic benches (or also called HTCs) used propietary protocols, the only documentation available was an electrical diagram of one HTC and a operation manual for the other one. On top of that, none of them could be connected to the corporate domain for cybersecurity reasons, so I have to look for a way to extract the data in real-time without interfering with the normal operation of the equipment.",
+                "achievements":[
+                    "Identification of the communication interface", 
+                    "Mapping of payload patterns to physical behavior", 
+                    "Design of a functional data acquisition pipeline that converts raw byte streams into usable, dashboard-ready telemetry for future IoT integration and digital monitoring."],
+                "skills": ["Python", "Wireshark", "Networking", "Serial Protocols Analysis", "VSCode", "Putty", "Logic Analyzer", "Realterm", "Electric Diagram Interpretation"],
+                "warningTitle": "Important Notice",
+                "warning": "This is a very broad explation of a 4-month process, I had to omit some details and technical explanations for the understanding of this format, this may not reflect perfectly the difficulty of the process. Some images may contain sensitive information (like IPs) that has been colored for confidentiality.",
+                "steps":{
+                    "Hardware": {
+                        "title": "Hardware Analysis",
+                        "description": "These two HTCs (SCADAs themselves) are from the propietaries VMC and Taylor (Power Test), respectively. I started by opening the VMC electrical cabinet and identifying the main components, communication interfaces and ports available. I found out that this first machine had RS-232 and RS-485 ports, so I decided to explore this interface with Salaea Logic Analyzer but the main limitation was the lack of documentation for serial essential values like bitrate, parity, etc. For the Taylor HTC, I inspectioned the main components of the SCADA, between them, a main computer, the HTC itself (inside where there were all the valves and manometers), a sensor box, and a tablet with Windows OS.",
+                        "image": "/projects/hydraulic_bench/vmc_electric.jpg",
+                        "width": 500,
+                        "height": 300
+                    },
+                    "Wireshark": {
+                        "title": "Network Analysis",
+                        "description": "I discovered that the Taylor HTC had an own network, and, in a general view, that is how data was transported between the main computer, the tablet, and the sensor box. So, I connected my computer to the same network and used Wireshark to capture the traffic. After analyzing the packets, I identified the IP addresses of the devices involved and filtered the traffic to focus on the communication between the main computer and the sensor box. Even though I could not connect to internet from the main computer, I could try to use the tablet as a bridge between the system and the external network.",
+                        "image": "/projects/hydraulic_bench/vmc_wireshark.jpeg",
+                        "width": 900,
+                        "height": 450
+                    },
+                    "Payload": {
+                        "title": "Payload Analysis and Decoding",
+                        "description": "Using the captured data from Wireshark, I started analyzing the payloads of the packets exchanged between the devices. I looked for patterns and recurring sequences that could indicate specific commands or data points. By correlating these patterns with the known behavior of the HTC (e.g., changes in pressure readings, valve states), I was able to reverse-engineer the protocol used for communication. This involved a lot of trial and error, as well as referencing any available documentation or similar protocols. Main tool used here were VSC, Python and Pyshark.",
+                        "image": "/projects/hydraulic_bench/taylor_hex.png",
+                        "width": 600,
+                        "height": 200
+                    }                    
+                },
                 "status": "Completed",
-                "startDate": "",
-                "endDate": ""
+                "startDate": "12/02/2025",
+                "endDate": "31/07/2025"
             },
             "linealTransformers": {
                 "name": "Lineal Transformers",
-                "description": "Web platform created to ease the learning of lineal transformers for engineering students in Math asignatures. Developed as Final project for the Discrete Mathematics Course.",
-                "problem":" insert problem",
-                "challenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students.",
+                "description": "Web platform that gametizes the way we learn lineal transformations on figures and functions.",
+                "problem":" Engineering students often struggle to grasp the concepts of lineal transformations due to the abstract nature of the subject and the lack of interactive learning tools. Traditional teaching methods, such as lectures and textbooks, may not effectively engage students or provide practical examples that illustrate how these transformations apply in real-world scenarios. This gap in understanding can lead to difficulties in advanced courses that build upon these foundational concepts.",
+                "challenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students with gametized quizzes and inside results verification.",
                 "achievements": [
-                    "Developed an interactive web platform with visualizations and examples.",
-                    "Implemented user-friendly features to enhance the learning experience.",
-                    "Received positive feedback from students and educators."
+                    "Not launched yet"
                 ],
-                "skills": ["JavaScript", "Wireshark", "Networking", "Serial Protocols Analysis"],
-                "steps": [
-                    "Design the web platform layout and user interface.",
-                    "Develop interactive features and visualizations using JavaScript.",
-                    "Test the platform with engineering students and gather feedback.",
-                    "Refine the platform based on user feedback to improve usability."
-                ],
+                "skills": ["JavaScript", "React", "Next.js", "GeoGebra", "CSS", "Vercel"],
+                "steps":{
+                    "GeoGebra": {
+                        "title": "A bit of spoiler about the platform",
+                        "description": "Using GeoGebra, our team created interactive applets that visually demonstrate lineal transformations on various geometric figures and functions. These applets allow users to manipulate parameters and observe the effects of transformations in real-time, enhancing their understanding through hands-on learning.",
+                        "image": "/projects/lineal_transformers/infinitum_preview.png",
+                        "width": 600,
+                        "height": 300
+                    }     
+                },
                 "status": "In Progress",
-                "startDate": "",
-                "endDate": "",
+                "startDate": "24/09/2025",
+                "endDate": "12/12/2025",
                 "link": ""
             },
             "TinkuyhubJuntta": {
                 "name": "Tinkuyhub & Juntta Platforms Integration",
                 "description": "HTTPS integration of Tinkuyhub & Juntta platforms to create an account for both Tinkuyhub and Juntta in Tinkuyhub website.",
-                "problem":" insert problem",
-                "challenge": "Reduce the friction in the signup process by integrating both platforms for a seamless user experience.",
+                "problem":" Users faced friction during the signup process as they had to create separate accounts on both Tinkuyhub and Juntta platforms, leading to a disjointed user experience and potential drop-offs during registration.",
+                "challenge": "Integrate and configurate the right elements without disrupting the existing user experience on Tinkuyhub platform while ensuring seamless account creation on both platforms.",
                 "achievements": [
-                    "Successfully designed and developed an e-commerce platform.",
-                    "Implemented secure payment processing and order management features.",
-                    "Optimized the platform for performance and user experience."
+                    "Successfully integrate both platforms using HTTPS protocols.",
+                    "Manage the marketing campaign to inform users about the new feature.",
+                    "Write the privacy policy and terms of service updates to reflect the integration."
                 ],
                 "skills": ["Moddle", "HTTP", "PHP"],
-                "steps": [
-                    "Design the e-commerce platform layout and user interface.",
-                    "Develop frontend features using React.",
-                    "Implement backend functionalities with Node.js, Express, and MongoDB.",
-                    "Integrate secure payment processing and order management systems."
-                ],
+                "steps": {
+                    "noSpoiler": {
+                        "title": "Plugin Moodle integration",
+                        "description": "Some information is not been shown for cybersecurity reasons.",
+                        "image": "/projects/juntta/php.png",
+                        "width": 600, 
+                        "height": 250
+                    }
+                },
                 "status": "Completed",
                 "startDate": "",
                 "endDate": ""
@@ -551,20 +572,22 @@
             "AIAvatar": {
                 "name": "AI Avatar Development",
                 "description": "Development of AI-driven avatars for interactive applications.",
-                "problem":" insert problem",
-                "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time.",
+                "problem":"Deceased characters and historical figures are often difficult to bring to life in a way that feels authentic and engaging. Traditional methods of representation, such as static images or pre-recorded videos, lack the dynamic interaction that modern audiences expect. This creates a challenge in educational, entertainment, and customer service applications where user engagement is crucial.",
+                "challenge": "Create realistic and responsive AI avatars that can interact with users in real-time(like in meetings settings).",
                 "achievements": [
-                    "Successfully developed AI avatars with natural language processing capabilities.",
-                    "Implemented real-time interaction features for enhanced user engagement.",
-                    "Deployed AI avatars in various interactive applications."
+                    "Successfully developed AI chatbot with Gradio, Python, and a knowledge base for character personalization capabilities.",
+                    "Designed AI voice with Chatterbox, cleaning and adapting audio samples for training."
                 ],
-                "skills": ["Python", "TensorFlow", "Natural Language Processing", "Gradio", "Hugging Face"],
-                "steps": [
-                    "Design the AI avatar models and interaction scenarios.",
-                    "Develop natural language processing algorithms using Python and TensorFlow.",
-                    "Implement real-time interaction features for user engagement.",
-                    "Deploy AI avatars in interactive applications and gather user feedback."
-                ],
+                "skills": ["Python", "Llama", "Natural Language Processing", "Gradio", "Hugging Face"],
+                "steps": {
+                    "noSpoiler": {
+                        "title": "Chatbot Development",
+                        "description": "Chatbot with knowledge base for character personalization capabilities and deployment using Gradio.",
+                        "image": "/projects/ai_avatar/vsc.png",
+                        "width": 600, 
+                        "height": 250
+                    }
+                },
                 "status": "In Progress",
                 "startDate": "",
                 "endDate": ""
@@ -663,7 +686,8 @@
     "certificatesSection": {
         "title": "Certificates",
         "description": 
-            "This section includes various certificates I have earned since 11 y/o. Feel free to filter what you are most interested on"
+            "This section includes various certificates I have earned since 11 y/o. Feel free to filter what you are most interested on",
+        "goBackButton": "Go back"
     },
     "servicesSection": {
         "title": "Services",
@@ -786,12 +810,14 @@
         "description": "Feel free to reach out for collaborations or inquiries.",
         "data": {
             "name": "Carolina Celeste Navarro Aldoradin",
-            "email1": "cnava.aldoradin@gmail.com",
-            "emailDev": "genix.mvp@gmail.com",
+            "primaryEmail": "Primary email",
+            "emailDev": "Developer email",
             "Instagram": "@ccelestenava",
             "linkedIn": "www.linkedin.com/in/carolina-celeste-navarro-aldoradin",
             "gitHub": "github.com/genixmvp",
             "location": "La Molina, Lima - Peru",
+            "phoneNumber": "Phone Number",
+            "whatsappMessage": "Please, try to text me via WhatsApp first before calling me. I may think it is spam.",
             "message": "Message",
             "submit": "Send"
         },
@@ -874,6 +900,13 @@
                     "position": "Engineering Manager at Ferreyros",
                     "phone": "+51 996 907 599",
                     "email": "luis.aguilar@ferreyros.com.pe",
+                    "languages_spoken": ["Spanish"]
+                },
+                "ref11":{
+                    "name": "Henrik Castro",
+                    "position": "Metallizing Area Manager at Ferreyros",
+                    "phone": "+51 988 917 030",
+                    "email": "henrik.castro@ferreyros.com.pe",
                     "languages_spoken": ["Spanish"]
                 }
             }

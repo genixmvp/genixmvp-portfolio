@@ -121,12 +121,13 @@ const projectKeys = [
   "reverseEngineering",
   "linealTransformers",
   "TinkuyhubJuntta",
-  "AIAvatar",
-  "youngaCommunique",
+  "AIAvatar"
+];
+
+{/*  "youngaCommunique",
   "academiaLideres",
   "monico",
-  "theCvGen"
-];
+  "theCvGen"*/}
 
 const projectCovers: Record<string, string> = {
   senatiInnova: "/projects/senatiInnova.jpg",
@@ -135,11 +136,13 @@ const projectCovers: Record<string, string> = {
   linealTransformers: "/projects/lineal.png",
   TinkuyhubJuntta: "/projects/juntta.png",
   AIAvatar: "/projects/ai.jpg",
-  youngaCommunique: "/projects/younga.png",
+  
+};
+
+{/*youngaCommunique: "/projects/younga.png",
   academiaLideres: "/projects/academia.png",
   monico: "/projects/monico.jpeg",
-  theCvGen: "/projects/cvgen.png",
-};
+  theCvGen: "/projects/cvgen.png",*/}
 
 export default function ProjectsPage() {
   const intl = useIntl();
@@ -174,13 +177,16 @@ const params = useParams() as any;
     linealTransformers: `/${current}/projects/linealTransformers`,
     TinkuyhubJuntta: `/${current}/projects/TinkuyhubJuntta`,
     AIAvatar: `/${current}/projects/AIAvatar`,
-    youngaCommunique: `/${current}/projects/youngaCommunique`,
+    
+  };
+
+{/*
+  for next realeases:
+  youngaCommunique: `/${current}/projects/youngaCommunique`,
     academiaLideres: `/${current}/projects/academiaLideres`,
     monico: `/${current}/projects/monico`,
     theCvGen: `/${current}/projects/theCvGen`
-  };
-
-
+  */}
 
   // --- LÓGICA CIRCULAR ---
   const getCircularIndex = (index: number) => {

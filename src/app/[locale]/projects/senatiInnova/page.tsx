@@ -75,12 +75,17 @@ export default function ProjectDetailPage() {
   // Object.values() toma: { "PLC": {...}, "MQTT": {...} } y lo convierte en: [ {...}, {...} ]
   const stepsArray = projectData.steps ? Object.values(projectData.steps) : [];
 
+  const current = params?.locale ?? "en";
+  const goToProjectsPath = `/${current}/projects`;
+    
   return (
     <div style={styles.page}>
       <div style={styles.container}>
-        
-        <Link href="/projects" style={styles.backLink}>
-          ← {intl.formatMessage({ id: "common.back", defaultMessage: "Back to Projects" })}
+
+
+    
+        <Link href={goToProjectsPath} style={styles.backLink}>
+          ← {intl.formatMessage({ id: "projectsSection.backToProjects", defaultMessage: "Back to " })}
         </Link>
 
         {/* --- HERO SECTION --- */}
@@ -122,7 +127,19 @@ export default function ProjectDetailPage() {
                     border: '1px solid rgba(255,255,255,0.05)',
                 }}>
                    {/* Aquí podrías usar projectData.coverImage si lo agregas al JSON */}
-                   <span style={{color: '#555', fontSize: '14px'}}>[Project Diagram / Cover Image]</span>
+                   {/*<span style={{color: '#555', fontSize: '14px'}}>[Project Diagram / Cover Image]</span>*/}
+                   <Image 
+                        src="/projects/senatiInnova/prototipo_main.png"
+                        alt="this is a text"
+                        width={600}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '16px',
+                        }}
+                    />
                 </div>
 
                 {/* Challenge & Problem */}

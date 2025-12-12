@@ -2,6 +2,7 @@
 import React from 'react'
 import { useIntl } from 'react-intl'
 import Link from 'next/link'
+import { useParams, notFound } from "next/navigation"; // Importamos notFound por si el ID no existe
 
 // --- Styles ---
 const styles: { [k: string]: React.CSSProperties } = {
@@ -89,7 +90,12 @@ const serviceKeys = [
 
 export default function ServicesPage() {
     const intl = useIntl()
+    const params = useParams();
+    const locale = (params?.locale as string) || "en";
 
+    const current = params?.locale ?? "en";
+    const contactMePath = `/${current}/contact`;
+      
     return (
         <div style={styles.page}>
             <main style={styles.hero}>
@@ -150,7 +156,7 @@ export default function ServicesPage() {
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 24 }}>
-                        <Link href="/contact" style={{ textDecoration: 'none' }}>
+                        <Link href={contactMePath} style={{ textDecoration: 'none' }}>
                             <div style={styles.contactBtn}>
                                 {intl.formatMessage({ id: 'contactSection.title', defaultMessage: 'Contact Me' })}
                             </div>

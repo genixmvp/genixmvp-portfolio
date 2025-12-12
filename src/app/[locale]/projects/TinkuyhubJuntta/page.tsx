@@ -55,7 +55,7 @@ export default function ProjectDetailPage() {
 
   const messages: any = locale === "en" ? enMessages : esMessages;
 
-  const projectData = messages.projectsSection?.projects?.AIAvatar;
+  const projectData = messages.projectsSection?.projects?.TinkuyhubJuntta;
 
   // Si el proyecto no existe en el JSON (url inválida), mostramos 404
   if (!projectData) {
@@ -125,7 +125,7 @@ export default function ProjectDetailPage() {
                    {/* Aquí podrías usar projectData.coverImage si lo agregas al JSON */}
                    {/*<span style={{color: '#555', fontSize: '14px'}}>[Project Diagram / Cover Image]</span>*/}
                    <Image 
-                        src="/projects/ai.jpg"
+                        src="/projects/lineal.png"
                         alt="this is a text"
                         width={600}
                         height={300}

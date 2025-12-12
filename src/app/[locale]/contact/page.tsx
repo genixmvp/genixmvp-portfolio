@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
-
+import { useParams, notFound } from "next/navigation";
 // --- Styles & Data Keys ---
 const styles: { [k: string]: React.CSSProperties } = {
   page: {
@@ -89,9 +89,7 @@ export default function ContactPage() {
 
     setLoading(true);
 
-    // --- OPTIONAL: API CALL ---
-    // If you want to log who viewed it, or verify against a real backend, uncomment this:
-    /*
+   /*
     try {
         const res = await fetch("/api/verify-email", {
             method: "POST",
@@ -113,6 +111,9 @@ export default function ContactPage() {
         setUnlocked(true);
     }, 800);
   };
+  const params = useParams();
+  const current = params?.locale ?? "en";
+  const goToProjectsPath = `/${current}/projects`;
 
   return (
     <div style={styles.page}>
@@ -141,7 +142,7 @@ export default function ContactPage() {
                {/* Avatar Placeholder */}
                <div style={{ width: 100, height: 100, borderRadius: '50%', background: "linear-gradient(135deg,#6b00ff,#00d4ff)", display: "flex", alignItems:"center", justifyContent:"center", fontWeight:700, fontSize: 32, color:'white', flexShrink: 0 }}>
                     
-                    <img src="/images/black-cat/catnt.png" alt="" />
+                    <img src="/images/black-cat/blackcat.jpg" alt="" style={{width: 100, height:100, borderRadius:'50%'}} />
                </div>
                
                <div className="flex-1 text-center md:text-left w-full">
@@ -150,23 +151,25 @@ export default function ContactPage() {
                   
                   <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                       <div className="bg-white/5 px-4 py-3 rounded-lg text-sm text-slate-300 flex-1 text-center sm:text-left">
-                          <span className="opacity-50 block text-xs uppercase mb-1">Primary Email</span>
-                          {intl.formatMessage({ id: "contactSection.data.email1", defaultMessage: "cnava.aldoradin@gmail.com" })}
+                          <span className="opacity-50 block text-xs mb-1">{intl.formatMessage({id: "contactSection.data.primaryEmail"})}</span>
+                          cnava.aldoradin@gmail.com
                       </div>
-                      <div className="bg-white/5 px-4 py-3 rounded-lg text-sm text-slate-300 border-white/5 flex-1 text-center sm:text-left">
-                          <span className="opacity-50 block text-xs uppercase mb-1">Dev Email</span>
-                          {intl.formatMessage({ id: "contactSection.data.emailDev", defaultMessage: "genix.mvp@gmail.com" })}
+                      <div className="bg-white/5 px-4 py-3 rounded-lg text-sm text-slate-300 flex-1 text-center sm:text-left">
+                          <span className="opacity-50 block text-xs mb-1">{intl.formatMessage({id: "contactSection.data.emailDev"})}</span>
+                          genix.mvp@gmail.com
+                      </div>
+                      <div className="bg-white/5 px-4 py-3 rounded-lg text-sm text-slate-300 flex-1 text-center sm:text-left">
+                          <span className="opacity-50 block text-xs uppercase mb-1">{intl.formatMessage({id: "contactSection.data.phoneNumber"})}</span>
+                          +51 983 453 381
                       </div>
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
   
-                    {/* Botón de Mensaje (Email) */}
                     <a 
                       href={`mailto:${intl.formatMessage({ id: "contactSection.data.email1", defaultMessage:"cnava.aldoradin@gmail.com" })}`} 
                       style={{ ...styles.contactBtn, display: 'flex', alignItems: 'center', gap: 8 }}
                     >
-                      {/* Icono de Email (Opcional, para consistencia) */}
                       <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
@@ -213,7 +216,7 @@ export default function ContactPage() {
 
             {!unlocked ? (
                 // --- LOCKED STATE ---
-                <div className="bg-white/5 border border-dashed rounded-xl p-8 text-center backdrop-blur-sm">
+                <div className="bg-white/5 rounded-xl p-8 text-center backdrop-blur-sm">
                     <div className="text-4xl mb-4">🔒</div>
                     <h4 className="text-lg font-semibold text-white mb-2">
                         {intl.formatMessage({ id: "contactSection.references.description", defaultMessage: "Unlock references" })}
