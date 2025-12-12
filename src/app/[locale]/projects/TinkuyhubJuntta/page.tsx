@@ -125,7 +125,7 @@ export default function ProjectDetailPage() {
                    {/* Aquí podrías usar projectData.coverImage si lo agregas al JSON */}
                    {/*<span style={{color: '#555', fontSize: '14px'}}>[Project Diagram / Cover Image]</span>*/}
                    <Image 
-                        src="/projects/lineal.png"
+                        src="/projects/juntta.png"
                         alt="this is a text"
                         width={600}
                         height={300}
