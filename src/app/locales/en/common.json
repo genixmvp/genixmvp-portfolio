@@ -16,19 +16,20 @@
         "description": "IoT & Software Engineer building cyber-physical systems.",
         "avatarAlt": "Avatar Image",
         "technical_profile":"Industrial Mechatronics Technician and Software Engineering student with hands-on experience in IoT, embedded systems, industrial telemetry, and data analysis. I’ve worked with RLTS, industrial protocols, data acquisition pipelines, dashboards, and connected hardware prototypes.",
-        "CTA": "If you’re looking for someone who can bridge hardware, software, and data in real systems, you’re in the right place, or simply you just want to feed a hungry kid, contact me!",
+        "CTA": "If you’re looking for someone who can bridge hardware, software, and data in real systems, you’re in the right place!",
         "aboutMe": "My discipline was shaped through years of taekwondo training and competition. I also built a solid artistic background as part of the Youth Choir of Sinfonía por el Perú, performing and touring in Europe, including an international competition in Vienna. I’ve consistently taken part in high-performance extracurriculars, leadership roles, and selective academic programs. This trajectory defines how I work: consistency, rigorous training, focus, and the ability to adapt quickly to demanding environments.",
         "keyAchievements":{
             "title": "Key Achievements",
-            "achievement1": "11th place at National Level and 1st place at Departmental Level in SENATI Innova 2025 Innovation Contest.",
-            "achievement2": "YOUNGA Delegate in YOUNGA 2023-2024, BridgingTheGap Ventures and Aspire Leadership Program Graduate.",
-            "achievement3": "Laureate Transforma Scholarship holder to pursue Software Engineering at the Peruvian University of Applied Sciences, recognizing academic excellence and potential.",
-            "achievement4": "3rd place at National Level in the Academy of Leaders UNI-ONU sustainable development contest ('Academia de Líderes 2023' program by the National University of Engineering and the United Nations System in Peru), focusing on sustainable development proposals. Recognized by the National Society of Industries (Peru) for this matter",
-            "achievement5": "Represented Peru as part of Sinfonia por el Perú main youth choir in the International Choir Competition in Vienna, Austria, as well as tours in Chile and Switzerland.",
-            "achievement6": "Speaker at the She Leads Congress of Women Leaders organized by IEEE WIE UPC and Entrepreneurship and Innovation Congress by National University of San Marcos",
-            "achievement7": "Almost 10 years of Taekwondo practice, achieving 3rd Dan Black Belt and multiple national and departmental medals.",
-            "achievement8": "Recognized for outstanding performance by the Reliability Department at Ferreyros S.A.",
-            "achievement9": "Forjando Caminos program graduate by the Give Generando Oportunidades Association and sponsored by Ferreyros to study Industrial Mechatronics."
+            "achievement1": "Recognition by the Ferreyros Reliability Department.",
+            "achievement2":"11th place at the national level and 1st place at the departmental level in the SENATI Innova 2025 Innovation Contest.",
+            "achievement3": "Representative delegate of Peru at the YOUNGA 2023 Global Festival for Impact, BridgingTheGap Ventures.", 
+            "achievement4": "Graduate of the Aspire Institute Leaders Program (Harvard University).",
+            "achievement5": "Recipient of the Laureate Transforma Scholarship at the Peruvian University of Applied Sciences.",
+            "achievement6": "3rd place at the national level in the National Proposal Competition for Sustainable Development of the UNI-ONU Leaders Academy (Yachaylabs team) in the 'Leaders Academy 2023II-2024I' Program by the National University of Engineering and the United Nations System in Peru. Recognized by the National Society of Industries for this achievement as a Senati student.",
+            "achievement7": "Representative of Peru as part of the central choir of Sinfonia por el Perú in the International Choir Competition in Vienna, Austria, as well as tours in Chile, Switzerland and Austria.",
+            "achievement8": "Invited speaker at the Congresses organized by IEEE WIE UPC and the Universidad Nacional Mayor de San Marcos.",
+            "achievement9": "Almost 10 years of ITF Taekwondo training, reaching the level of III DAN black belt.",
+            "achievement10": "Graduate of the Forjando Caminos program of the Give Generando Oportunidades Association and recipient of Sponsorship by Ferreyros."
         },
         "availability_title": "Availability",
         "availability": "Currently available for freelance and full-time hybrid and remote roles globally or on-site roles in Peru.",
@@ -398,7 +399,7 @@
                 "name": "Acquisition and Visualization of Data from Mechatronic Module 4.0 with Augmented Reality",
                 "description": "Monitoring and data acquisition system prototype for SENATI Innovation National Contest, making possible the visualization of the Classification and Dosification 4.0 Modules at SENATI",
                 "problem": "During our career and our learning process with the 4.0 industry Mechatronic Modules, we have some difficulties to quickly detect faults during PLC configuration and slowing down the learning process. Additionally, there is no historical data logging to analyze abnormal behavior or identify persistent issues in sensors and actuators. This lack of traceability prevents effective preventive maintenance and limits the optimization of the module’s performance. As a result, both students and technicians must rely on slow and imprecise manual verification.",
-                "challenge": "This prototype was made in around 24 hours.",
+                "challenge": "This prototype was made in less than 24 hours.",
                 "achievements":[
                     "11th place at National Level",
                     "1st place at departmental level"
@@ -421,7 +422,7 @@
                     },
                     "UnityApp": {
                         "title": "Unity App",
-                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional features include sensors and actuators datasheets and 3D CAD models visualization.",
                         "image": "/projects/senatiInnova/unity_app_home.jpg",
                         "width": 200,
                         "height": 350
@@ -442,7 +443,7 @@
                     },
                     "UnityAppRTData": {
                         "title": "Real-Time Data Visualization",
-                        "description": "Using the real-time data comming from the MQTT topic from the Mechatronic Module 4.0, we placed in Unity app's screen.",
+                        "description": "We placed in Unity app's screen the data from the MQTT topic.",
                         "image": "/projects/senatiInnova/unity_app_rt_data.jpg",
                         "width": 200,
                         "height": 350
@@ -480,13 +481,13 @@
                 "emailPlaceholder":"Your email",
                 "unlockButton":"Unlock PDF",
                 "status": "Completed",
-                "startDate": "",
-                "endDate": ""
+                "startDate": "10/02/2025",
+                "endDate": "30/06/2025"
             },
             "reverseEngineering": {
                 "name": "Hydraulic Bench Reverse Engineering Process",
                 "description": "Reverse Engineering process for two HTCs with legacy protocols and limited documentation.",
-                "problem": "The hydraulic benches mentioned in this project lacked configuration documentation and provided no access to their internal communication protocol. It was requested for the company to be able to access to this data and send it to their environment automatically (to be able to setup a telemetry system), meaning it was not plausible to download and upload reports manually, because that work was already being done, but didn't give satisfactory results for historic logging and data analysis. My work was to get to know this two machines' hardware and software architectures, identifying the communication interface and protocols involved, design a pipeline to extract, 'translate' and transport data from this SCADA to our environment (local server or cloud). Without this data, the company would not be able to monitor the equipment remotely, perform data analysis, or implement predictive maintenance strategies.",
+                "problem": "The hydraulic benches mentioned in this project lacked configuration documentation and provided no access to their internal communication protocol. It was requested by the company to be able to access to this data and send it to their environment automatically (to be able to setup a telemetry system), meaning it was not plausible to download and upload reports manually, because that work was already being done, but didn't give satisfactory results for historic logging and data analysis. My work was to get to know this two machines' hardware and software architectures, identifying the communication interface and protocols involved, design a pipeline to extract, 'translate' and transport data from this SCADA to our environment (local server or cloud). Without this data, the company would not be able to monitor the equipment remotely, perform data analysis, or implement predictive maintenance strategies.",
                 "challenge": "Both Hydraulic benches (or also called HTCs) used propietary protocols, the only documentation available was an electrical diagram of one HTC and a operation manual for the other one. On top of that, none of them could be connected to the corporate domain for cybersecurity reasons, so I have to look for a way to extract the data in real-time without interfering with the normal operation of the equipment.",
                 "achievements":[
                     "Identification of the communication interface", 
@@ -524,9 +525,9 @@
             },
             "linealTransformers": {
                 "name": "Lineal Transformers",
-                "description": "Web platform that gametizes the way we learn lineal transformations on figures and functions.",
-                "problem":" Engineering students often struggle to grasp the concepts of lineal transformations due to the abstract nature of the subject and the lack of interactive learning tools. Traditional teaching methods, such as lectures and textbooks, may not effectively engage students or provide practical examples that illustrate how these transformations apply in real-world scenarios. This gap in understanding can lead to difficulties in advanced courses that build upon these foundational concepts.",
-                "challenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students with gametized quizzes and inside results verification.",
+                "description": "Web platform that gametizes the way we learn linear transformations on figures and functions.",
+                "problem":" Engineering students often struggle to grasp the concepts of linear transformations due to the abstract nature of the subject and the lack of interactive learning tools. Traditional teaching methods, such as lectures and textbooks, may not effectively engage students or provide practical examples that illustrate how these transformations apply in real-world scenarios. This gap in understanding can lead to difficulties in advanced courses that build upon these foundational concepts.",
+                "challenge": "Create an interactive web platform that simplifies the understanding of linear transformers for engineering students with gametized quizzes and inside results verification.",
                 "achievements": [
                     "Not launched yet"
                 ],
@@ -534,7 +535,7 @@
                 "steps":{
                     "GeoGebra": {
                         "title": "A bit of spoiler about the platform",
-                        "description": "Using GeoGebra, our team created interactive applets that visually demonstrate lineal transformations on various geometric figures and functions. These applets allow users to manipulate parameters and observe the effects of transformations in real-time, enhancing their understanding through hands-on learning.",
+                        "description": "Using GeoGebra, our team created interactive applets that visually demonstrate linear transformations on various geometric figures and functions. These applets allow users to manipulate parameters and observe the effects of transformations in real-time, enhancing their understanding through hands-on learning.",
                         "image": "/projects/lineal_transformers/infinitum_preview.png",
                         "width": 600,
                         "height": 300

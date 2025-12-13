@@ -9,38 +9,39 @@
     },
     "aboutSection": {
         "title": "Sobre mí",
-        "short_greeting": "Hola, I am Carolina Celeste!",
+        "short_greeting": "Hola, soy Carolina Celeste",
         "full_name": {
             "title": "Nombre completo",
             "value": "Carolina Celeste Navarro Aldoradin"},
-        "description": "Técnica y futura ingeniera construyendo sistemas ciber-físicos.",
+        "description": "Técnica y futura ingeniera con experiencia en IoT, Telemetría e Ingeniería inversa.",
         "avatarAlt": "Avatar Image",
-        "technical_profile":"Titulado técnica de Mecatrónica Industrial y estudiante de Ingeniería de Software con experiencia práctica en IoT, sistemas embebidos, telemetría industrial, y análisis de datos. He trabajado con RLTS, protocolos industriales, pipelines de adquisición de datos, dashboards, y prototipos de hardware conectados.",
-        "CTA": "Si estás buscando  a alguien que una hardware, software, y datos en sistemas reales, estás en el lugar correcto :D, contáctame!",
-        "aboutMe": "Mi disciplina fue construida a lo largo de años de entrenamiento y competición de Taekwondo ITF. También construí un background artístico sólido como parte del Coro Juvenil de Sinfonía por el Perú, presentandome con la agrupación en Europa, incluyendo una competición international en Vienna. He participado consistentement de extracurriculares de alta exigencia, roles de liderazgo,  y programas selectivos académicos. Esta trayectoria construida desde aproximadamente los 11 años, define mi ética de trabajo: consistencia, entrenamiento riguroso, concentración, y la habilidad de adaptarme rápidamente a entornos demandantes.",
+        "technical_profile":"Titulada técnica de Mecatrónica Industrial y estudiante de Ingeniería de Software con experiencia práctica en IoT, sistemas embebidos, telemetría industrial, y análisis de datos. He trabajado con RLTS, protocolos industriales, pipelines de adquisición de datos, dashboards, y prototipos de hardware conectados.",
+        "CTA": "Si estás buscando  a alguien que combine hardware, software, y datos en sistemas reales, ¡estás en el lugar correcto!",
+        "aboutMe": "Mi disciplina fue construida a lo largo de años de entrenamiento y competición de Taekwondo ITF. También construí un background artístico sólido como parte del Coro Juvenil de Sinfonía por el Perú, presentándome con la agrupación en Europa, incluyendo la Competición International Summa Cum Laude en Vienna, Austria. He participado consistentemente de extracurriculares de alta exigencia, roles de liderazgo, y programas selectivos académicos. Esta trayectoria construida desde aproximadamente los 11 años, define mi ética de trabajo: consistencia, disciplina, concentración, y la habilidad de adaptarme rápidamente a entornos demandantes.",
         "keyAchievements":{
             "title": "Logros clave",
-            "achievement1": "11vo lugar a nivel nacional y 1er lugar a nivel departamental en el Concurso de Innovación SENATI Innova 2025.",
-            "achievement2": "YOUNGA Delegada en YOUNGA 2023-2024, BridgingTheGap Ventures y del graduada del programa de liderazgo de Aspire.",
-            "achievement3": "Becaria de la beca Laureate Transforma que cubre mis estudios de Ingeniería de Software en la  at the Peruvian University of Applied Sciences, recognizing academic excellence and potential.",
-            "achievement4": "3er lugar a nivel nacional en el Concurso Nacional de Propuestas para el Desarrollo Sostenible de la Academia de líderes UNI-ONU (equipo Yachaylabs) ( Programa'Academia de Líderes 2023' por la Universidad Nacional de Ingeniería y el sistema de las Naciones Unidas en Perú). Reconocida por la Sociedad Nacional de Industrias por este logro como alumna senati.",
-            "achievement5": "Representante del Perú como parte del coro central de Sinfonia por el Perú en la Competencia Internacional de Coros en Vienna, Austria, así como también, las giras en Chile, Suiza y Austria.",
-            "achievement6": "Ponente en el Congreso de Mujeres líderes organizado por el capítulo IEEE WIE UPC y el I Congreso de Emprendimiento e Innovación por la Universidad Nacional Mayor de San Marcos.",
-            "achievement7": "Casi 10 años de entrenamiento de Taekwondo ITF, alcanzando el grado de cinturón negro III DAN y múltiples medTodosas departamentales y nacionales.",
-            "achievement8": "Reconocimiento por mi rendimiento por el Departamento de Confiabilidad de Ferreyros S.A.",
-            "achievement9": "Graduada del programa Forjando Caminos de la Asociación Give Generando Oportunidades y patrocinada por Ferreyros en mi carrera técnica de Mecatrónica industrial."
+            "achievement1": "Reconocimiento por el Departamento de Confiabilidad de Ferreyros.",
+            "achievement2":"11vo lugar a nivel nacional y 1er lugar a nivel departamental en el Concurso de Innovación SENATI Innova 2025.",
+            "achievement3": "Delegada representante de Perú en el Festival Global por el impacto YOUNGA 2023, BridgingTheGap Ventures.", 
+            "achievement4": "Graduada del Programa de Líderes del Instituto Aspire (Universidad de Harvard).",
+            "achievement5": "Acreedora de la Beca Laureate Transforma en la Universidad Peruana de Ciencias Aplicadas (UPC).",
+            "achievement6": "3er lugar a nivel nacional en el Concurso Nacional de Propuestas para el Desarrollo Sostenible de la Academia de líderes UNI-ONU (equipo Yachaylabs) en el Programa 'Academia de Líderes 2023II-2024I' por la Universidad Nacional de Ingeniería y el Sistema de las Naciones Unidas en Perú. Reconocida por la Sociedad Nacional de Industrias por este logro como alumna Senati.",
+            "achievement7": "Representante del Perú como parte del coro central de Sinfonia por el Perú en la Competencia Internacional de Coros en Vienna, Austria, así como también, las giras en Chile, Suiza y Austria.",
+            "achievement8": "Ponente invitada en los Congresos organizados por IEEE WIE UPC y la Universidad Nacional Mayor de San Marcos.",
+            "achievement9": "Casi 10 años de entrenamiento de Taekwondo ITF, alcanzando el grado de cinturón negro III DAN.",
+            "achievement10": "Graduada del programa Forjando Caminos de la Asociación Give Generando Oportunidades y acreedora del Patrocinio por Ferreyros."
         },
         "availability_title": "Disponibilidad",
-        "availability": "Actualmente disponible para trabajo freelance o full-time, ya sea de manera remota globalmente, y o en cualquier modalidad en Lima, Perú.",
+        "availability": "Disponible para trabajo freelance o full-time, ya sea trabajo remoto a nivel global o presencial/híbrido/remoto dentro de Lima, Perú.",
         "key_skills_title": "Habilidades Clave",
         "key_skills": [
             "IoT",   
-            "Embedded",
+            "Embebidos",
             "Telemetría",
             "Ingeniería inversa",
             "Ciberseguridad",
             "Networking",
-            "Prototyping",
+            "Prototipado",
             "Data Engineering"
         ],
         "contactTitle": "Contáctame",
@@ -63,7 +64,7 @@
         },
 
         "roles":{
-            "title": "Roles preferidos",
+            "title": "Roles preferidos (para referencia)",
             "filters":{
                 "filterCat": "Filtrar por categoría",
                 "filterMod": "Filtrar por modalidad"
@@ -99,7 +100,7 @@
                 },
                 "role3":
                 {
-                    "name": "Web Desarrollador",
+                    "name": "Desarrollador Web",
                     "categories":[
                         "Software", "Todos" ],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
@@ -107,7 +108,7 @@
                 },
                 "role4":
                 {
-                    "name": "IoT Desarrollador",
+                    "name": "Desarrollador IoT",
                     "categories":[
                         "IoT", "Hardware", "Industrial", "Data", "Software", "Todos"
                     ],
@@ -116,7 +117,7 @@
                 },
                 "role5":
                 {
-                    "name": "CAD Designer",
+                    "name": "Diseñador CAD",
                     "categories":[
                         "CAD", "Industrial", "Hardware", "R&D", "Todos"
                     ],
@@ -134,7 +135,7 @@
                 },
                 "role7":
                 {
-                    "name": "API Desarrollador (REST)",
+                    "name": "Desarrollador API (REST)",
                     "categories":[
                         "Software", "Cloud", "Todos"
                     ],
@@ -143,7 +144,7 @@
                 },
                 "role8":
                 {
-                    "name": "Automation Software Desarrollador (scripts + pipelines)",
+                    "name": "Desarrollador de Software de Automatización (scripts + pipelines)",
                     "categories":[
                         "Industrial", "Software", "RPA","Todos"
                     ],
@@ -190,7 +191,7 @@
                 },
                 "role13":
                 {
-                    "name": "IoT Engineer",
+                    "name": "Ingeniero IoT",
                     "categories":[
                         "IoT", "Industrial", "Hardware", "Software", "Todos"
                     ],
@@ -199,7 +200,7 @@
                 },
                 "role14":
                 {
-                    "name": "Low-Code / No-Code Desarrollador",
+                    "name": "Desarrollador Low-Code / No-Code",
                     "categories":[
                         "Software", "Automation", "Todos"
                     ],
@@ -208,17 +209,16 @@
                 },
                 "role15":
                 {
-                    "name": "Systems Integrator",
+                    "name": "Integrador de Sistemas",
                     "categories":[
-                        "Industrial", "IoT", "Hardware", "Software", "Networking",
-                    "Todos"
+                        "Industrial", "IoT", "Hardware", "Software", "Networking", "Todos"
                     ],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
                     "level": "Junior"
                 },
                 "role16":
                 {
-                    "name": "PLC/SCADA Support Engineer",
+                    "name": "Ingeniero de Soporte PLC/SCADA",
                     "categories":[
                         "Industrial", "IoT", "Field Services", "Hardware", "Software", "Todos"
                     ],
@@ -227,17 +227,16 @@
                 },
                 "role17":
                 {
-                    "name": "R&D Engineer",
+                    "name": "Ingeniero R&D",
                     "categories":[
-                        "R&D", "Industrial", "IoT", "Hardware", "Software",
-                    "Todos"
+                        "R&D", "Industrial", "IoT", "Hardware", "Software", "Todos"
                     ],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
                     "level": "Junior"
                 },
                 "role18":
                 {
-                    "name": "Embedded Systems Desarrollador",
+                    "name": "Desarrollador de Sistemas Embebidos",
                     "categories":[
                         "IoT", "Hardware", "Industrial", "Software","Todos"
                     ],
@@ -246,27 +245,25 @@
                 },
                 "role19":
                 {
-                    "name": "Firmware Desarrollador",
+                    "name": "Desarrollador de Firmware",
                     "categories":[
-                        "Software", "Hardware", "IoT", "Industrial",
-                    "Todos"
+                        "Software", "Hardware", "IoT", "Industrial", "Todos"
                     ],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
                     "level": "Junior"
                 },
                 "role20":
                 {
-                    "name": "IoT Solutions Engineer",
+                    "name": "Ingeniero de Soluciones IoT Jr.",
                     "categories":[
-                        "IoT", "Industrial", "Hardware", "Software",
-                    "Todos"
+                        "IoT", "Industrial", "Hardware", "Software", "Todos"
                     ],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
                     "level": "Junior"
                 },
                 "role21":
                 {
-                    "name": "Wireless Systems Engineer",
+                    "name": "Ingeniero de Sistemas Inalámbricos Jr.",
                     "categories":[
                     "IoT", "Industrial", "Hardware", "Networking", "Todos"
                     ],
@@ -275,7 +272,7 @@
                 },
                 "role22":
                 {
-                    "name": "IoT Prototyping Engineer",
+                    "name": "Ingeniero de Prototipado IoT Jr.",
                     "categories":[
                     "IoT", "Industrial", "R&D", "Hardware", "Software", "Todos"
                     ],
@@ -284,7 +281,7 @@
                 },
                 "role23":
                 {
-                    "name": "Data Analyst (industrial or general)",
+                    "name": "Analista de Datos (industrial o general)",
                     "categories":[
                         "Data", "Industrial","Todos"
                     ],
@@ -293,7 +290,7 @@
                 },
                 "role24":
                 {
-                    "name": "BI Analyst",
+                    "name": "Analista BI",
                     "categories":[
                         "Data", "Industrial", "Todos"
                     ],
@@ -302,7 +299,7 @@
                 },
                 "role25":
                 {
-                    "name": "Innovation Analyst",
+                    "name": "Analista de Innovación",
                     "categories":[
                         "Industrial", "Automation","Data","R&D", "Todos"
                     ],
@@ -311,7 +308,7 @@
                 },
                 "role26":
                 {
-                    "name": "Digital Transformation Analyst",
+                    "name": "Analista de Transformación Digital",
                     "categories":[ "Industrial","R&D", "Automation", "Cloud", "Data", "Todos"
                     ],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
@@ -319,7 +316,7 @@
                 },
                 "role27":
                 {
-                    "name": "IoT & Telematics Technician",
+                    "name": "Técnico IoT & Telemetría",
                     "categories":[
                         "Hardware", "IoT", "Industrial", "Telemetría", "Networking", "Field Services", "Todos"],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
@@ -327,14 +324,14 @@
                 },
                 "role28":
                 {
-                    "name": "Industrial Support Engineer",
+                    "name": "Ingeniero de Soporte Industrial",
                     "categories":[ "Industrial", "Hardware", "IoT", "Todos", "Field Services", "Electronics", "Todos"],
                     "modality": ["Presencial", "Remoto", "Híbrido"],
                     "level": "Junior"
                 },
                 "role29":
                 {
-                    "name": "Electronics Engineering Assistant",
+                    "name": "Asistente de Ingeniería Electrónica",
                     "categories":["Industrial","Hardware", "R&D", "Mining", "Electronics", "Todos"
                     ],                    
                     "modality": ["Presencial", "Remoto", "Híbrido"],
@@ -342,7 +339,7 @@
                 },
                 "role30":
                 {
-                    "name": "Embedded Electronics Technician",
+                    "name": "Técnico de Electrónica Embebida",
                     "categories":[ "Industrial", "Hardware", "IoT", "Electronics", "Todos"
                     ],
                     "modality": ["Presencial", "Híbrido"],
@@ -350,7 +347,7 @@
                 },
                 "role31":
                 {
-                    "name": "Lab Technician",
+                    "name": "Técnico de Laboratorio",
                     "categories":["Electronics", "Industrial", "Hardware", "Todos"
                     ],
                     "modality": ["Presencial", "Híbrido"],
@@ -358,28 +355,28 @@
                 },
                 "role32":
                 {
-                    "name": "Mining Technology Technician",
+                    "name": "Técnico de tecnología Minera",
                     "categories":[ "Automation", "Industrial", "Hardware", "Mining", "Electronics", "Field Services", "Todos"],
                     "modality": ["Presencial", "Híbrido"],
                     "level": "Junior"
                 },
                 "role33":
                 {
-                    "name": "Telematics InstTodosation Technician",
+                    "name": "Técnico de Telemática",
                     "categories":[ "Networking", "Industrial", "Hardware", "IoT", "Field Services",  "Todos"],
                     "modality": ["Presencial", "Híbrido"],
                     "level": "Junior"
                 },
                 "role34":
                 {
-                    "name": "Electrical/Electronic Maintenance technician",
+                    "name": "Técnico de Mantenimiento Eléctrico/Electrónico",
                     "categories":[ "Electronics", "Industrial", "Hardware", "Todos", "Field Services"],
                     "modality": ["Presencial", "Híbrido"],
                     "level": "Junior"
                 },
                 "role35":
                 {
-                    "name": "Technical Service Engineer",
+                    "name": "Servicio Técnico",
                     "categories":[ "Electronics", "Industrial", "Hardware","Field Services","Mining","Todos"
                     ],
                     "modality": ["Presencial", "Híbrido"],
@@ -395,76 +392,75 @@
         "projects":{
             "senatiInnova":
             {
-                "name": "Acquisition and Visualization of Data from Mechatronic Module 4.0 with Augmented Reality",
-                "description": "Monitoring and data acquisition system prototype for SENATI Innovation National Contest, making possible the visualization of the Classification and Dosification 4.0 Modules at SENATI",
-                "problem": "During our career and our learning process with the 4.0 industry Mechatronic Modules, we have some difficulties to quickly detect faults during PLC configuration and slowing down the learning process. AdditionTodosy, there is no historical data logging to analyze abnormal behavior or identify persistent issues in sensors and actuators. This lack of traceability prevents effective preventive maintenance and limits the optimization of the module’s performance. As a result, both students and technicians must rely on slow and imprecise manual verification.",
-                "chTodosenge": "This prototype was made in around 24 hours.",
+                "name": "Adquisición y Visualización de Datos de Módulo Mecatrónico 4.0 con Realidad Aumentada",
+                "description": "Prototipo de sistema de monitoreo y adquisición de datos para el concurso nacional de innovación SENATI Innova, posibilitando la visualización de datos de los módulos de Clasificación y Dosificación the Classification de SENATI",
+                "problem": "Durante nuestra carrera y nuestro proceso de aprendizaje con los módulos mecatrónicos de industria 4.0, teníamos dificultades al momento de detectar fallas rápidamente durante la configuración/programación de los PLC para una correcta secuencia de operación, lo que ralentizaba el trabajo grupal. Adicionalmente, no existe data histórica que permita analizar comportamientos anormales o identificar problemas persistentes en sensores y actuadores. Esta falta de trazabilidad evita que exista el mantenimiento preventivo efectivo y limita la optimización de la operación de módulo. Como resultado, tanto estudiantes como personal de mantenimiento deben depender de la lenta e imprecisa verificación manual.",
+                "challenge": "Este prototipo fue hecho en menos de 24 horas.",
                 "achievements":[
-                    "11th place at National Level",
-                    "1st place at departmental level"
+                    "11vo lugar a nivel nacional",
+                    "1er lugar a nivel departamental"
                 ],
                 "skills": ["AR", "IoT", "Unity","Node-RED", "MQTT", "ThingsBoard", "Google Sheets", "HiveMQ", "S7", "Autodesk Inventor"],
                 "steps":{
                     "PLC": {
-                        "title": "Siemens PLC Data Adquisition",
-                        "description": "We used the S7 Node-RED library to read data from the 2 Siemens S7-1200 PLCs that control the Dosification and Clasification module via Ethernet (TCP Port 102). The S7 protocol is Siemens proprietary communication language.",
+                        "title": "Adquisición de datos de PLC Siemens",
+                        "description": "Usamos la librería de Node-RED S7 para leer los datos de los dos PLCs Siemens S7-1200 que controlan los módulos de Dosificación y Clasificación via Ethernet (TCP Port 102). El protocolo S7 es un lenguaje de comunicación propiedad de Siemens.",
                         "image": "/projects/senatiInnova/mechatronic_module1.jpg",
                         "width": 200,
                         "height": 300
                     },
                     "MQTT": {
                         "title": "Node-RED Flow",
-                        "description": "Modules' data sources from the PLCs are the S7 Nodes in both the Node-RED flows of the Dosification and Classification Module. The next node is a function node used to separate each value and parse the content in a JSON format. Later, we added a new node to limit 1 message each 5 seconds, so the system is can process better the data. We configured two MQTT nodes, one is sending the data to the Unity App and the other to the Thingsboard dashboard. For the Unity app, we used the HiveMQ MQTT broker. Also, we added a GSheet Node to append the data into a log. Lastly, we added a couple of debug nodes to verify that the data is being sent correctly.",
+                        "description": "Las fuentes de datos de los módulos de los PLCs son los nodos S7 en los flows de Node-RED tanto para el Módulo de Dosificación como para el Módulo de Clasificación. El siguiente nodo es una función usada para separar cada valor y pasar el contenido a un JSON. Luego, añadimos un nuevo nodo para limitar a un mensaje cada 5 segundos, así el sistema es capaz de procesar la data y mantener un buen rendimiento. Configuramos dos nodos MQTT, uno está mandando la data a la app de Unity y el otro al dashboard de Thingsboard. Para la app de Unity app, usamos el broker MQTT HiveMQ. También, añadimos un nodo GSheet para mantener un registro de la data. Finalmente, añadimos un par de nodos Debug para verificar que la data se está enviando correctamente.",
                         "image": "/projects/senatiInnova/node_red_flow.jpg",
                         "width": 900,
                         "height": 450
                     },
                     "UnityApp": {
                         "title": "Unity App",
-                        "description": "Developed an Augmented Reality application using Unity and Vuforia to visualize real-time data from the Mechatronic Module 4.0 on mobile devices. Additional feautes include sensors and acuators datasheets and 3D CAD models visualization.",
+                        "description": "Hemos desarrollado  una aplicación de Realidad Aumentada usando Unity y Vuforia para visualizar data en tiempo real de los Módulos Mecatrónicos 4.0 en dispositivos móbiles. Características adicionales incluyen a las datasheets y los modelos CAD 3D de los sensores y actuadores de los módulos.",
                         "image": "/projects/senatiInnova/unity_app_home.jpg",
                         "width": 200,
                         "height": 350
                     },
                     "UnityApp3d": {
-                        "title": "Sensors and Actuators 3D Models Visualization",
-                        "description": "Using Autodesk Inventor, we designed the 3D CAD models for some sensors and actuators, and placing them around the screen of our Unity app with AR.",
+                        "title": "Visualización de modelos 3D de los sensores y actuadores",
+                        "description": "Usando Autodesk Inventor, diseñamos los modelos CAD 3D de algunos sensores y actuadores, y colocandolos alrededor de la pantalla de nuestra aplicación de Unity con Realidad Aumentada.",
                         "image": "/projects/senatiInnova/unity_app_3d_model.jpg",
                         "width": 200,
                         "height": 350
                     },
                     "UnityAppDatasheet": {
-                        "title": "Sensors and Actuators Datasheets in Unity App",
-                        "description": "As part of making the students and maintenance personnel experience more suitable to get the right information about the module's elements, we included datasheets for sensores and actuators inside our Unity app.",
+                        "title": "Datasheets de sensores y actuadores en la aplicación Unity",
+                        "description": "Como parte de la experiencia de los estudiantes y del personal de mantenimiento más adecuada para obtener la información correcta sobre los elementos del módulo, incluimos las datasheets para los sensores y actuadores dentro de nuestrq app de Unity.",
                         "image": "/projects/senatiInnova/unity_app_datasheet.jpg",
                         "width": 200,
                         "height": 350
                     },
                     "UnityAppRTData": {
-                        "title": "Real-Time Data Visualization",
-                        "description": "Using the real-time data comming from the MQTT topic from the Mechatronic Module 4.0, we placed in Unity app's screen.",
+                        "title": "Visualización de datos en tiempo real",
+                        "description": "Colocamos en un display la data del tópico MQTT proveniente de los módulos en la pantalla de la app de Unity.",
                         "image": "/projects/senatiInnova/unity_app_rt_data.jpg",
                         "width": 200,
                         "height": 350
                     },
                     "Dashboard":{
                         "title": "ThingsBoard Dashboard",
-                        "description": "Created a dashboard using ThingsBoard to visualize real-time data from the Mechatronic Module 4.0.",
+                        "description": "Creamos un dashboard usando ThingsBoard para visualizar data en tiempo real del tópico MQTT.",
                         "image": "/projects/senatiInnova/thingsboard_dashboard.jpg",
                         "width": 500,
                         "height": 300
                     },
                     "GoogleSheets": {
-                        "title": "Google Sheets Data Logging",
-                        "description": "Implemented a Node-RED Google Sheets node to log data into Google Sheets for historical analysis. Stored values include Air Flow, Product Quantity, current production, total flow, voltage levels, current levels, power, and ON/OFF state of capacitive sensor for both Clasification and Dosification.",
+                        "title": "Base de datos en Google Sheets",
+                        "description": "Implementamos un nodo de Google Sheets en Node-Red para registrar la data de los módulos para análisis histórico. Valores almacenados incluyen al flujo de aire, cantidad de productos, producción actual, flujo total, niveles de voltaje, niveles de corriente, poder, y los estados booleanos del sensor capacitivo.",
                         "link": "https://docs.google.com/spreadsheets/d/1d-NvjFazP4KH8B6VcGNnyBCx_JznZEGK1k9XKjmvrj8/edit?usp=sharing",
                         "image": "/projects/senatiInnova/google_sheets_database.png",
                         "width": 400,
                         "height": 500
                     }
-                    
                 },
-                "status": "Completed",
+                "status": "Completado",
                 "startDate": "12/06/2025",
                 "endDate": "12/06/2025",
                 "collaborators": {
@@ -473,62 +469,62 @@
                 }
             },
             "RTLS": {
-                "name": "Real Time Localization System (RTLS)",
-                "description": "A RTLS system for tracking assets in real-time using BLE technology.",
-                "skills": ["BLE", "Wi-Fi","Node-RED", "C++", "VSCode", "ESP32", "Networking", "Prototyping", "CAD Design"],
-                "emailPrompt":"Input a valid email to unlock the pdf",
-                "emailPlaceholder":"Your email",
-                "unlockButton":"Unlock PDF",
-                "status": "Completed",
-                "startDate": "",
-                "endDate": ""
+                "name": "Sistema de Localización de Activos en Tiempo Real",
+                "description": "Un sistema de localización en tiempo real para trackear activos usando tecnología BLE.",
+                "skills": ["BLE", "Wi-Fi","Node-RED", "C++", "IoT", "ESP32", "Redes", "nRF Nordic", "Prototipado", "CAD Design", "PCB Design", "Electronics"],
+                "emailPrompt": "Ingrese un correo válido para desbloquear el pdf",
+                "emailPlaceholder":"Su correo",
+                "unlockButton":"Desbloquear PDF",
+                "status": "Completado",
+                "startDate": "10/02/2025",
+                "endDate": "30/06/2025"
             },
             "reverseEngineering": {
-                "name": "Hydraulic Bench Reverse Engineering Process",
-                "description": "Reverse Engineering process for two HTCs with legacy protocols and limited documentation.",
-                "problem": "The hydraulic benches mentioned in this project lacked configuration documentation and provided no access to their internal communication protocol. It was requested for the company to be able to access to this data and send it to their environment automaticTodosy (to be able to setup a Telemetría system), meaning it was not plausible to download and upload reports manuTodosy, because that work was already being done, but didn't give satisfactory results for historic logging and data analysis. My work was to get to know this two machines' hardware and software architectures, identifying the communication interface and protocols involved, design a pipeline to extract, 'translate' and transport data from this SCADA to our environment (local server or cloud). Without this data, the company would not be able to monitor the equipment Remotoly, perform data analysis, or implement predictive maintenance strategies.",
-                "chTodosenge": "Both Hydraulic benches (or also cTodosed HTCs) used propietary protocols, the only documentation available was an electrical diagram of one HTC and a operation manual for the other one. On top of that, none of them could be connected to the corporate domain for cybersecurity reasons, so I have to look for a way to extract the data in real-time without interfering with the normal operation of the equipment.",
+                "name": "Procedimiento de Ingeniería Inversa a dos Bancos de prueba de Transmisiones",
+                "description": "Proceso de Ingeniería Inversa para dos HTCs (Hydraulic Test Center) con protocolos propietarios (no estándares) y limitada documentación.",
+                "problem": "Los bancos hidráulicos mencionados en este proyecto carecían de documentación de configuración y no daban acceso a su protocolo de comunicación interno. La empresa solicitó poder acceder a estos datos y enviarlos a su entorno en tiempo real (para poder configurar un sistema de Telemetría), por lo que no era factible descargar y cargar informes manuales, porque ese trabajo ya se estaba haciendo, pero no dio resultados satisfactorios para el registro histórico y el análisis de datos. Mi trabajo fue conocer el hardware y la arquitectura de software de estas dos máquinas, identificando la interfaz de comunicación y los protocolos involucrados, diseñar un pipeline para extraer, 'traducir' y transportar datos de este SCADA a nuestro entorno (servidor local o nube). Sin estos datos, la empresa no sería capaz de monitorear los equipos remotamente, realizar análisis de datos o implementar estrategias de mantenimiento predictivo.",                "chTodosenge": "Both Hydraulic benches (or also called HTCs) used propietary protocols, the only documentation available was an electrical diagram of one HTC and a operation manual for the other one. On top of that, none of them could be connected to the corporate domain for cybersecurity reasons, so I have to look for a way to extract the data in real-time without interfering with the normal operation of the equipment.",
+                "challenge": "Imposibilidad de conectar las computadoras principales de cada SCADA al dominio corporativo.",
                 "achievements":[
-                    "Identification of the communication interface", 
-                    "Mapping of payload patterns to physical behavior", 
-                    "Design of a functional data acquisition pipeline that converts raw byte streams into usable, dashboard-ready Telemetría for future IoT integration and digital monitoring."],
-                "skills": ["Python", "Wireshark", "Networking", "Serial Protocols Analysis", "VSCode", "Putty", "Logic Analyzer", "Realterm", "Electric Diagram Interpretation"],
-                "warningTitle": "Important Notice",
-                "warning": "This is a very broad explation of a 4-month process, I had to omit some details and technical explanations for the understanding of this format, this may not reflect perfectly the difficulty of the process. Some images may contain sensitive information (like IPs) that has been colored for confidentiality.",
+                    "Identificación de la interfaz de comunicación.", 
+                    "Mapeo de patrones del payload a comportamiento físico de los SCADA.", 
+                    "Diseño de un pipeline funcional de adquisición de datos que convierte flujos de bytes sin procesar en datos ordenados, listos para telemetría para integración futura con IoT y monitoreo digital."],
+                "skills": ["Python", "Wireshark", "Análisis de red", "Análisis de Protocolos Seriales", "VSCode", "Putty", "Logic Analyzer", "Realterm", "Interpretación de Diagramas Eléctricos"],
+                "warningTitle": "Nota importante",
+                "warning": "Esta es una descripción breve y general de un trabajo de 4 meses, por motivos de formato, fue conveniente omitir algunos detalles y explicaciones técnicas. Las imágenes que contengan información sensible (como IPs) han sido parcialmente censuradas por confidencialidad.",
                 "steps":{
                     "Hardware": {
-                        "title": "Hardware Analysis",
-                        "description": "These two HTCs (SCADAs themselves) are from the propietaries VMC and Taylor (Power Test), respectively. I started by opening the VMC electrical cabinet and identifying the main components, communication interfaces and ports available. I found out that this first machine had RS-232 and RS-485 ports, so I decided to explore this interface with Salaea Logic Analyzer but the main limitation was the lack of documentation for serial essential values like bitrate, parity, etc. For the Taylor HTC, I inspectioned the main components of the SCADA, between them, a main computer, the HTC itself (inside where there were Todos the valves and manometers), a sensor box, and a tablet with Windows OS.",
+                        "title": "Análisis de Hardware",
+                        "description": "Los dos HTC (SCADAs propiamente dichos) son de los propietarios VMC y Taylor (Power Test), respectivamente. Comencé abriendo el gabinete eléctrico del VMC e identificando los principales componentes, interfaces de comunicación y puertos disponibles. Descubrí que esta primera máquina tenía puertos RS-232 y RS-485, así que decidí explorar esta interfaz con Salaea Logic Analyzer pero la principal limitación era la falta de documentación para valores esenciales de serie como bitrate, paridad, etc. Para el HTC Taylor, inspeccioné los componentes principales del SCADA, entre ellos, una computadora principal, el propio HTC (dentro de donde estaban todas las válvulas y manómetros), una caja de sensores y una tableta con sistema operativo Windows.",
                         "image": "/projects/hydraulic_bench/vmc_electric.jpg",
                         "width": 500,
                         "height": 300
                     },
                     "Wireshark": {
-                        "title": "Network Analysis",
-                        "description": "I discovered that the Taylor HTC had an own network, and, in a general view, that is how data was transported between the main computer, the tablet, and the sensor box. So, I connected my computer to the same network and used Wireshark to capture the traffic. After analyzing the packets, I identified the IP addresses of the devices involved and filtered the traffic to focus on the communication between the main computer and the sensor box. Even though I could not connect to internet from the main computer, I could try to use the tablet as a bridge between the system and the external network.",
+                        "title": "Análisis de Red",
+                        "description": "Descubrí que el HTC Taylor tenía una red propia y, en general, así es como se transportaban los datos entre el ordenador principal, la tableta y la caja de sensores. Entonces, conecté mi computadora a la misma red y usé Wireshark para capturar el tráfico. Después de analizar los paquetes, identifiqué las direcciones IP de los dispositivos involucrados y filtré el tráfico para centrarme en la comunicación entre la computadora principal y la caja de sensores. Aunque no pude conectarme a Internet desde la computadora principal, pude intentar usar la tableta como puente entre el sistema y la red externa.",
                         "image": "/projects/hydraulic_bench/vmc_wireshark.jpeg",
                         "width": 900,
                         "height": 450
                     },
                     "Payload": {
-                        "title": "Payload Analysis and Decoding",
-                        "description": "Using the captured data from Wireshark, I started analyzing the payloads of the packets exchanged between the devices. I looked for patterns and recurring sequences that could indicate specific commands or data points. By correlating these patterns with the known behavior of the HTC (e.g., changes in pressure readings, valve states), I was able to reverse-engineer the protocol used for communication. This involved a lot of trial and error, as well as referencing any available documentation or similar protocols. Main tool used here were VSC, Python and Pyshark.",
+                        "title": "Análisis y decodificación del data Payload",
+                        "description": "Usando data capturada de Wireshark, comencé a analizar l the payloads of the packets exchanged between the devices. I looked for patterns and recurring sequences that could indicate specific commands or data points. By correlating these patterns with the known behavior of the HTC (e.g., changes in pressure readings, valve states), I was able to reverse-engineer the protocol used for communication. This involved a lot of trial and error, as well as referencing any available documentation or similar protocols. Main tool used here were VSC, Python and Pyshark.",
                         "image": "/projects/hydraulic_bench/taylor_hex.png",
                         "width": 600,
                         "height": 200
                     }                    
                 },
-                "status": "Completed",
+                "status": "Completado",
                 "startDate": "12/02/2025",
                 "endDate": "31/07/2025"
             },
             "linealTransformers": {
                 "name": "Lineal Transformers",
-                "description": "Web platform that gametizes the way we learn lineal transformations on figures and functions.",
-                "problem":" Engineering students often struggle to grasp the concepts of lineal transformations due to the abstract nature of the subject and the lack of interactive learning tools. Traditional teaching methods, such as lectures and textbooks, may not effectively engage students or provide practical examples that illustrate how these transformations apply in real-world scenarios. This gap in understanding can lead to difficulties in advanced courses that build upon these foundational concepts.",
-                "chTodosenge": "Create an interactive web platform that simplifies the understanding of lineal transformers for engineering students with gametized quizzes and inside results verification.",
+                "description": "Plataforma web que gametiza la forma en que aprendemos transformaciones lineales sobre figuras y funciones.",
+                "problem":"Los estudiantes de ingeniería a menudo tienen dificultades para comprender los conceptos de transformaciones lineales debido a la naturaleza abstracta de la materia y la falta de herramientas de aprendizaje interactivas. Es posible que los métodos de enseñanza tradicionales, como las conferencias y los libros de texto, no atraigan eficazmente a los estudiantes ni proporcionen ejemplos prácticos que ilustren cómo estas transformaciones se aplican en escenarios del mundo real. Esta brecha en la comprensión puede generar dificultades en los cursos avanzados que se basan en estos conceptos fundamentales.",
+                "challenge": "Crear una plataforma web interactiva que simplifique la comprensión de los transformadores lineales para estudiantes de ingeniería con cuestionarios gametizados y verificación interna de resultados.",
                 "achievements": [
-                    "Not launched yet"
+                    "Coming soon."
                 ],
                 "skills": ["JavaScript", "React", "Next.js", "GeoGebra", "CSS", "Vercel"],
                 "steps":{
@@ -540,7 +536,7 @@
                         "height": 300
                     }     
                 },
-                "status": "In Progress",
+                "status": "En progreso",
                 "startDate": "24/09/2025",
                 "endDate": "12/12/2025",
                 "link": ""
@@ -565,7 +561,7 @@
                         "height": 250
                     }
                 },
-                "status": "Completed",
+                "status": "Completado",
                 "startDate": "",
                 "endDate": ""
             },
@@ -588,7 +584,7 @@
                         "height": 250
                     }
                 },
-                "status": "In Progress",
+                "status": "En progreso",
                 "startDate": "",
                 "endDate": ""
             },
@@ -609,7 +605,7 @@
                     "Implement real-time interaction features for user engagement.",
                     "Deploy AI avatars in interactive applications and gather user feedback."
                 ],
-                "status": "In Progress",
+                "status": "En progreso",
                 "startDate": "",
                 "endDate": "",
                 "link": "string"
@@ -632,7 +628,7 @@
                     "Implement real-time interaction features for user engagement.",
                     "Deploy AI avatars in interactive applications and gather user feedback."
                 ],
-                "status": "Completed",
+                "status": "Completado",
                 "startDate": "string",
                 "endDate": "string",
                 "link": "string"       
@@ -654,7 +650,7 @@
                     "Implement backend functionalities with Node.js, Express, and MongoDB.",
                     "Integrate secure payment processing and order management systems."
                 ],
-                "status": "Completed",
+                "status": "Completado",
                 "startDate": "",
                 "endDate": ""
             },
@@ -675,7 +671,7 @@
                     "Implement features for user input and customization of resumes.",
                     "Test the application for usability and performance, making improvements as needed."
                 ],
-                "status": "In Progress",
+                "status": "En progreso",
                 "startDate": "2024-01-15",
                 "endDate": "",
                 "link": ""

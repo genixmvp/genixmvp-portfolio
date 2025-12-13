@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import enMessages from "@/app/locales/en/common.json"
 import esMessages from"@/app/locales/es/common.json"
+import { Weight } from "lucide-react";
 
 export default function AboutPage(): React.ReactElement {
 
@@ -189,7 +190,7 @@ export default function AboutPage(): React.ReactElement {
                         </div>
                         <div style={{ flex: 1 }}>
                             <h1 style={styles.name}>{intl.formatMessage({ id: 'aboutSection.short_greeting', defaultMessage: "Hello! I'm Carolina Celeste Navarro Aldoradin" })}</h1>
-                            <div style={styles.title}>{fake.title} — {fake.location}</div>
+                            <div style={styles.title}>{fake.location}</div>
                             <div style={styles.title}>{intl.formatMessage({ id: 'aboutSection.full_name.title', defaultMessage: "Full" })} - {intl.formatMessage({ id: 'aboutSection.full_name.value', defaultMessage: "Full" })}</div>                            
                             <p style={styles.summary}>{intl.formatMessage({ id: 'aboutSection.technical_profile', defaultMessage: "I am a technician/engineer from Peru, passionate about creating innovative solutions through technology. I enjoy exploring new technologies and improving my skills through continuous learning." })}</p>
 
@@ -236,72 +237,90 @@ export default function AboutPage(): React.ReactElement {
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#480171ff" }}>
+                                <p style={{ margin: 0, color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement1", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#5f02b5ff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement2", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#4a02b5ff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement3", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#0802b5ff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement4", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#2602b5ff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement5", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#4d02b5ff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement6", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#56088aff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement7", defaultMessage: ""})}
-                                </h5>
+                                </p>
                             </div>
                         </div>
                         <div style={{ marginTop: 20 }}>    
                             <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
                                 marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
                                 <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
-                                <h5 style={{ margin: 0, color: "#7302b5ff" }}>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
                                     {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement8", defaultMessage: ""})}
-                                </h5>
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement9", defaultMessage: ""})}
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{ marginTop: 20 }}>    
+                            <div style={{ padding: "12px", borderRadius: 10, background: "rgba(255,255,255,0.06)",
+                                marginBottom: 10, border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "8px"}}>
+                                <h5 style={{ color: "#fbbf24", margin: 0 }}>★</h5>
+                                <p style={{ margin: 0,  color: "#ffffffff", fontSize:14 }}>
+                                    {intl.formatMessage({ id: "aboutSection.keyAchievements.achievement10", defaultMessage: ""})}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -330,7 +349,7 @@ export default function AboutPage(): React.ReactElement {
                             {intl.formatMessage({ id: "aboutSection.downloadButtonES", defaultMessage: "Download" })}
                         </a>
                         <a
-                            href="/cv/CV_ES.pdf"
+                            href="/cv/CV_EN.pdf"
                             download
                             style={styles.contactBtn}
                             >
@@ -349,7 +368,7 @@ export default function AboutPage(): React.ReactElement {
                         {/* SELECT MULTIPLE */}
                         <div style={{ marginTop: 20, marginBottom: 10 }}>
                         <h3 style={{ marginBottom: 8, color: "#dbe9ff", fontWeight: 600 }}>
-                            Filter by Category
+                            {intl.formatMessage({id: "aboutSection.roles.filters.filterCat"})}
                         </h3>
 
                         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
@@ -379,7 +398,7 @@ export default function AboutPage(): React.ReactElement {
                             })}
                         </div>
                         <h3 style={{ marginBottom: 8, color: "#dbe9ff", fontWeight: 600 }}>
-                            Filter by Modality
+                            {intl.formatMessage({id: "aboutSection.roles.filters.filterMod"})}
                         </h3>
 
                         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
